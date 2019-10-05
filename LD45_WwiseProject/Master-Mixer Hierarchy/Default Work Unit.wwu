@@ -9,6 +9,18 @@
 							<ObjectRef Name="System" ID="{61B908A8-0C4B-48DF-8C6B-0EC9B195D965}" WorkUnitID="{E2447223-6913-4203-8B72-9BFA0ADAD456}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="AMBIANT" ID="{5E7B647F-F3CF-4ECB-ABC0-5006359071C4}"/>
+						<Bus Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}"/>
+						<Bus Name="MUSIC" ID="{7D72BC3D-68C6-4A88-8772-F925469EE50F}"/>
+						<Bus Name="REVERBS" ID="{50F73A55-EE7C-4B07-83E2-552A306CFB39}">
+							<ChildrenList>
+								<AuxBus Name="Workshop_Big" ID="{40CAA94C-C94C-4633-941B-0AA064A271BE}"/>
+								<AuxBus Name="Workshop_Little" ID="{597926A8-4279-4C81-824F-66E07294971C}"/>
+								<AuxBus Name="Workshop_Metal_Pipe" ID="{F759129C-511F-415D-8DCE-36677DDA3DE9}"/>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

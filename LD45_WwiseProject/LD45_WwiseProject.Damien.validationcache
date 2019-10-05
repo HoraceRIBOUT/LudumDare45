@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="94">
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1570277335" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1570277248" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1570259977" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Effects\Factory Effects.wwu" DateLow="1570259977" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Events\Default Work Unit.wwu" DateLow="1570277610" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\LD45_WwiseProject.Damien.wsettings" DateLow="1570280065" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\LD45_WwiseProject.wproj" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Queries\Factory Queries.wwu" DateLow="1570259977" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1570277564" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\States\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1570275087" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1570286174" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1570286873" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1570286174" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1570286174" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1570286174" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1570286174" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1570286173" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1570286174" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Effects\Factory Effects.wwu" DateLow="1570286174" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Events\Default Work Unit.wwu" DateLow="1570286811" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1570286173" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1570286173" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\LD45_WwiseProject.Damien.wsettings" DateLow="1570286177" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\LD45_WwiseProject.wproj" DateLow="1570286173" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1570286174" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1570286173" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1570286173" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1570286173" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1570286173" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Queries\Factory Queries.wwu" DateLow="1570286173" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1570286174" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1570286174" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\States\Default Work Unit.wwu" DateLow="1570286174" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1570286174" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1570286174" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Desktop\LD45\LD45_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1570286174" DateHigh="0"/>
 </ValidationCache>

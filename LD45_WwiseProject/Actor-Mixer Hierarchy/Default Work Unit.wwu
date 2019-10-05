@@ -9,7 +9,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+							<ObjectRef Name="MUSIC" ID="{7D72BC3D-68C6-4A88-8772-F925469EE50F}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -40,7 +40,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+							<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -54,7 +54,72 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Movement" ID="{59AB4C63-9E81-4EFA-9652-BD34885D928C}" ShortID="511979800">
+								<Sound Name="Screw_Movement" ID="{59AB4C63-9E81-4EFA-9652-BD34885D928C}" ShortID="511979800">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{BE8FD8A1-27CE-4C3B-80F6-70002EB4331F}" ShortID="131784993">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Speed" ID="{DF16E620-3E08-4BFF-8576-D64A4C8906FE}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{B187E6B8-E716-4187-BB75-DBB3A09AB1F3}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-240</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>120</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{1C702B51-8187-44B6-B04E-D4E99A7E22C7}" ShortID="253410794">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Speed" ID="{DF16E620-3E08-4BFF-8576-D64A4C8906FE}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{696F2415-D884-49F5-BC4B-6DA3DD0866AF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>0.43789</XPos>
+																<YPos>-1.66674</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
@@ -73,6 +138,155 @@
 										<ActiveSource Name="Metal Cart, Roll, Light SND8204" ID="{0EBECAB5-94F4-43C8-B6A6-E269A855F579}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="AMBIANT" ID="{84E8FBA4-BF50-470A-BAE1-2CDCC5339ADB}" ShortID="45969172">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="AMBIANT" ID="{5E7B647F-F3CF-4ECB-ABC0-5006359071C4}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Objects" ID="{5D54A044-5678-4AE6-B7F1-E208313B4776}" ShortID="343216010">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Fridge" ID="{60941407-ABD4-4C1A-97B3-247ED99692C8}" ShortID="638987984">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Object_Ambiant_Workshop_Fridge_01" ID="{2BBDD004-6DCC-4D52-BB55-02B4F41B95A5}" ShortID="875993855">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Medium" ID="{79E9E340-B7FB-4F30-8182-EB3EBA579CED}" WorkUnitID="{6BAC450B-DF25-494E-9313-05A28BAF4893}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Object_Ambiant_Workshop_Fridge_01" ID="{45E15CB3-2AF2-4119-9A6D-F9B10CC06E18}" ShortID="572981973">
+													<Language>SFX</Language>
+													<AudioFile>Object_Ambiant_Workshop_Fridge_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Object_Ambiant_Workshop_Fridge_01" ID="{45E15CB3-2AF2-4119-9A6D-F9B10CC06E18}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Ambiances_2D" ID="{1D660C01-64BA-4060-86F2-A106190910B7}" ShortID="1042589180">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Amb_Workshop_Air_Slow_Lp_01" ID="{9B1427AD-0586-459A-9B08-AF4C8F4D4BF8}" ShortID="1064525223">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Amb_Workshop_Air_Slow_Lp_01" ID="{A31FE50B-D7C2-4988-AFF2-640EA400498D}" ShortID="420413879">
+											<Language>SFX</Language>
+											<AudioFile>Amb_Workshop_Air_Slow_Lp_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Amb_Workshop_Air_Slow_Lp_01" ID="{A31FE50B-D7C2-4988-AFF2-640EA400498D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Ambiances_3D" ID="{19C5C0CD-2C2E-463C-8C44-668FE6297BE5}" ShortID="604458513">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Ambiances_Test" ID="{48156F68-9FD8-4187-81D3-195CF3C7376E}" ShortID="587498680">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ambiance test" ID="{8320C201-38A6-40B0-8CF6-23BF4D90833A}" ShortID="485429915">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Att_Far" ID="{E663B870-47B7-4BC3-9E62-7739E0287BE5}" WorkUnitID="{6BAC450B-DF25-494E-9313-05A28BAF4893}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMBIANT" ID="{5E7B647F-F3CF-4ECB-ABC0-5006359071C4}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ambience, City, Street Junction, Pedestrians, Traffic, Night, Albert Street, Charlotte Street, Brisbane, Australia SND39491" ID="{9ED63CA9-DB0C-4381-9E32-59E35A27F2F9}" ShortID="621396537">
+													<Language>SFX</Language>
+													<AudioFile>Ambience, City, Street Junction, Pedestrians, Traffic, Night, Albert Street, Charlotte Street, Brisbane, Australia SND39491.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{A99C883E-618B-4714-8A1A-2D98715E3B79}"/>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Ambience, City, Street Junction, Pedestrians, Traffic, Night, Albert Street, Charlotte Street, Brisbane, Australia SND39491" ID="{9ED63CA9-DB0C-4381-9E32-59E35A27F2F9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

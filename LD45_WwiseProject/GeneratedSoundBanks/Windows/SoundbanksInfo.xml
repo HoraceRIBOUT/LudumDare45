@@ -21,17 +21,32 @@
 			<ShortName>LD45_Main</ShortName>
 			<Path>LD45_Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2344858515" Name="Amb_Workshop_Air_Slow_Lp_01" ObjectPath="\Events\Default Work Unit\Amb_Workshop_Air_Slow_Lp_01"/>
+				<Event Id="367424028" Name="Ambiance_test" ObjectPath="\Events\Default Work Unit\Ambiance_test"/>
 				<Event Id="1539411869" Name="Intro_Music" ObjectPath="\Events\Default Work Unit\Intro_Music"/>
+				<Event Id="1205858677" Name="Object_Ambiant_Workshop_Fridge_01" ObjectPath="\Events\Default Work Unit\Object_Ambiant_Workshop_Fridge_01"/>
 				<Event Id="1082678885" Name="Screw_Movement" ObjectPath="\Events\Default Work Unit\Screw_Movement"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="420413879" Language="SFX">
+					<ShortName>Amb_Workshop_Air_Slow_Lp_01.wav</ShortName>
+					<Path>SFX\Amb_Workshop_Air_Slow_Lp_01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="572981973" Language="SFX">
+					<ShortName>Object_Ambiant_Workshop_Fridge_01.wav</ShortName>
+					<Path>SFX\Object_Ambiant_Workshop_Fridge_01_6296B0F9.wem</Path>
+				</File>
+				<File Id="621396537" Language="SFX">
+					<ShortName>Ambience, City, Street Junction, Pedestrians, Traffic, Night, Albert Street, Charlotte Street, Brisbane, Australia SND39491.wav</ShortName>
+					<Path>SFX\Ambience, City, Street Junction, Pedestrians, Traffic, Night, Albert Street, Charlotte Street, Brisbane, Australia SND39491_6296B0F9.wem</Path>
+				</File>
 				<File Id="891429978" Language="SFX">
 					<ShortName>Video Game, Music, Level 1 SND29806 1.wav</ShortName>
-					<Path>SFX\Video Game, Music, Level 1 SND29806 1_10C4C929.wem</Path>
+					<Path>SFX\Video Game, Music, Level 1 SND29806 1_6296B0F9.wem</Path>
 				</File>
 				<File Id="1057227399" Language="SFX">
 					<ShortName>Metal Cart, Roll, Light SND8204.wav</ShortName>
-					<Path>SFX\Metal Cart, Roll, Light SND8204_10C4C929.wem</Path>
+					<Path>SFX\Metal Cart, Roll, Light SND8204_6296B0F9.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

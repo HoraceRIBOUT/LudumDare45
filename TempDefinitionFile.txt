@@ -1,2 +1,8 @@
+LD45_Main	"Object_Ambiant_Workshop_Fridge_01"
+LD45_Main	"Amb_Workshop_Air_Slow_Lp_01"
 LD45_Main	"Intro_Music"
 LD45_Main	"Screw_Movement"
+LD45_Main	"Ambiance_test"
+LD45_Main	-AuxBus	"Workshop_Big"
+LD45_Main	-AuxBus	"Workshop_Little"
+LD45_Main	-AuxBus	"Workshop_Metal_Pipe"

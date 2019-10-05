@@ -1,5 +1,14 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	78669895	AMBIANT			\Default Work Unit\Master Audio Bus\AMBIANT	
+	436743010	CHARACTER			\Default Work Unit\Master Audio Bus\CHARACTER	
+	3545700988	REVERBS			\Default Work Unit\Master Audio Bus\REVERBS	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	MUSIC			\Default Work Unit\Master Audio Bus\MUSIC	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	281756661	Workshop_Little			\Default Work Unit\Master Audio Bus\REVERBS\Workshop_Little	
+	914717957	Workshop_Metal_Pipe			\Default Work Unit\Master Audio Bus\REVERBS\Workshop_Metal_Pipe	
+	1891561585	Workshop_Big			\Default Work Unit\Master Audio Bus\REVERBS\Workshop_Big	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
