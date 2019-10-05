@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>D:\Desktop\LD45\LD45_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Desktop\LD45\LD45_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Desktop\LD45\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Desktop\LD45\LD45_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1642697036" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\LD45_Main</ObjectPath>
+			<ShortName>LD45_Main</ShortName>
+			<Path>LD45_Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1539411869" Name="Intro_Music" ObjectPath="\Events\Default Work Unit\Intro_Music"/>
+				<Event Id="1082678885" Name="Screw_Movement" ObjectPath="\Events\Default Work Unit\Screw_Movement"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="891429978" Language="SFX">
+					<ShortName>Video Game, Music, Level 1 SND29806 1.wav</ShortName>
+					<Path>SFX\Video Game, Music, Level 1 SND29806 1_10C4C929.wem</Path>
+				</File>
+				<File Id="1057227399" Language="SFX">
+					<ShortName>Metal Cart, Roll, Light SND8204.wav</ShortName>
+					<Path>SFX\Metal Cart, Roll, Light SND8204_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
