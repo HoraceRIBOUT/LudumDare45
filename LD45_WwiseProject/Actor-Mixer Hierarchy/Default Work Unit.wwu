@@ -34,7 +34,7 @@
 						</Sound>
 					</ChildrenList>
 				</ActorMixer>
-				<ActorMixer Name="CHARACTER" ID="{4220E4FD-00C0-439E-81DE-D122AEA1B6CB}" ShortID="826403111">
+				<ActorMixer Name="PLAYER" ID="{4220E4FD-00C0-439E-81DE-D122AEA1B6CB}" ShortID="826403111">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
@@ -44,13 +44,23 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<ActorMixer Name="SFX" ID="{382ECE0A-AA0F-47B3-A3CE-8404884E8082}" ShortID="634747830">
+						<ActorMixer Name="P_SFX" ID="{382ECE0A-AA0F-47B3-A3CE-8404884E8082}" ShortID="634747830">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+								</Reference>
+							</ReferenceList>
+						</ActorMixer>
+						<ActorMixer Name="P_Foley" ID="{4ED68DFF-E381-4E61-96C9-05812CD67AD2}" ShortID="224273076">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -125,7 +135,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+											<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -174,7 +184,7 @@
 									<ChildrenList>
 										<Sound Name="Object_Ambiant_Workshop_Fridge_01" ID="{2BBDD004-6DCC-4D52-BB55-02B4F41B95A5}" ShortID="875993855">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -258,7 +268,7 @@
 									<ChildrenList>
 										<Sound Name="Ambiance test" ID="{8320C201-38A6-40B0-8CF6-23BF4D90833A}" ShortID="485429915">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
