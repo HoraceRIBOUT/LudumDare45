@@ -1,9 +1,22 @@
 Event	ID	Name			Wwise Object Path	Notes
-	367424028	Ambiance_test			\Default Work Unit\Ambiance_test	
-	1082678885	Screw_Movement			\Default Work Unit\Screw_Movement	
 	1205858677	Object_Ambiant_Workshop_Fridge_01			\Default Work Unit\Object_Ambiant_Workshop_Fridge_01	
 	1539411869	Intro_Music			\Default Work Unit\Intro_Music	
-	2344858515	Amb_Workshop_Air_Slow_Lp_01			\Default Work Unit\Amb_Workshop_Air_Slow_Lp_01	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1550877507	NumberOfGears			\Default Work Unit\NumberOfGears	
+	3865314626	Material			\Default Work Unit\Material	
+
+Switch	ID	Name	Switch Group			Notes
+	678209053	Two	NumberOfGears			
+	766521211	Zero	NumberOfGears			
+	912956111	Three	NumberOfGears			
+	1064933119	One	NumberOfGears			
+	2611770117	Five	NumberOfGears			
+	2863728729	Four	NumberOfGears			
+	841620460	Concrete	Material			
+	2058049674	Wood	Material			
+	2473969246	Metal	Material			
+	3762184421	HollowMetal	Material			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	640949982	Speed			\Default Work Unit\Speed	
@@ -11,6 +24,8 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	78669895	AMBIANT			\Default Work Unit\Master Audio Bus\AMBIANT	
 	436743010	CHARACTER			\Default Work Unit\Master Audio Bus\CHARACTER	
+	2165637248	Amb_2D			\Default Work Unit\Master Audio Bus\AMBIANT\Amb_2D	
+	2182414867	Amb_3D			\Default Work Unit\Master Audio Bus\AMBIANT\Amb_3D	
 	3545700988	REVERBS			\Default Work Unit\Master Audio Bus\REVERBS	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	MUSIC			\Default Work Unit\Master Audio Bus\MUSIC	
@@ -21,9 +36,17 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1891561585	Workshop_Big			\Default Work Unit\Master Audio Bus\REVERBS\Workshop_Big	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	420413879	Amb_Workshop_Air_Slow_Lp_01	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Amb_Workshop_Air_Slow_Lp_01_9B96ECC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIANT\Ambiances_2D\Amb_Workshop_Air_Slow_Lp_01		494143
+	27078415	Amb_Workshop_Air_Slow_Lp	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Amb_Workshop_Air_Slow_Lp_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIANT\Ambiances_2D\Amb_Workshop\Amb_Workshop_Air_Slow_Lp		494143
+	38578571	Player_JumpSping_01	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Player_JumpSping_01_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLAYER\P_SFX\Player_JumpSpring\Spring\Player_JumpSping_01		20714
+	102572542	Amb_Workshop_UnderTable_Lp	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Amb_Workshop_UnderTable_Lp_9B96ECC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIANT\Ambiances_3D\Amb_UnderTable\Amb_Workshop_UnderTable_Lp		274335
+	157029568	Screw_Moves_RawMetal_Lp_V2	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\SCREW\Screw_Moves_RawMetal_Lp_V2_25903C52.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLAYER\P_Foley\Screw_Gears\SCREW_ZERO\Screw_Moves_RawMetal_Lp_V2		74704
+	169863240	Screw_Moves_Wood_Lp	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\SCREW\Screw_Moves_Wood_Lp_0EC23E51.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLAYER\P_Foley\Screw_Gears\SCREW_ZERO\Screw_Moves_Wood_Lp		53551
+	198411007	Screw_Moves_HollowMetal_Lp	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\SCREW\Screw_Moves_HollowMetal_Lp_91E3AD54.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLAYER\P_Foley\Screw_Gears\SCREW_ZERO\Screw_Moves_HollowMetal_Lp		85998
+	309461809	Screw_Moves_Concrete_Lp	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\SCREW\Screw_Moves_Concrete_Lp_D23279F6.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLAYER\P_Foley\Screw_Gears\SCREW_ZERO\Screw_Moves_Concrete_Lp		72617
+	412372338	Player_JumpSping_02	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Player_JumpSping_02_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLAYER\P_SFX\Player_JumpSpring\Spring\Player_JumpSping_02		15315
 	572981973	Object_Ambiant_Workshop_Fridge_01	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Object_Ambiant_Workshop_Fridge_01_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIANT\Objects\Fridge\Object_Ambiant_Workshop_Fridge_01		276875
-	621396537	Ambiance test	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Ambience, City, Street Junction, Pedestrians, Traffic, Night, Albert Street, Charlotte Street, Brisbane, Australia SND39491_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIANT\Ambiances_3D\Ambiances_Test\Ambiance test		486688
+	598344507	Amb_Workshop_Low_Lp	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Amb_Workshop_Low_Lp_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIANT\Ambiances_2D\Amb_Workshop\Amb_Workshop_Low_Lp		260740
+	674275159	Player_JumpSping_03	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Player_JumpSping_03_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLAYER\P_SFX\Player_JumpSpring\Spring\Player_JumpSping_03		19884
 	891429978	Video Game, Music, Level 1 SND29806 1	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Video Game, Music, Level 1 SND29806 1_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUSIC\Video Game, Music, Level 1 SND29806 1		115857
-	1057227399	Screw_Movement	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Metal Cart, Roll, Light SND8204_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\CHARACTER\SFX\Screw_Movement		133296
+	906161043	Player_JumpSping_04	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Player_JumpSping_04_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLAYER\P_SFX\Player_JumpSpring\Spring\Player_JumpSping_04		16791
 
