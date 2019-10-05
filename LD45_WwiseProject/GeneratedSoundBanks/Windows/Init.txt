@@ -1,6 +1,8 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	78669895	AMBIANT			\Default Work Unit\Master Audio Bus\AMBIANT	
 	436743010	CHARACTER			\Default Work Unit\Master Audio Bus\CHARACTER	
+	2165637248	Amb_2D			\Default Work Unit\Master Audio Bus\AMBIANT\Amb_2D	
+	2182414867	Amb_3D			\Default Work Unit\Master Audio Bus\AMBIANT\Amb_3D	
 	3545700988	REVERBS			\Default Work Unit\Master Audio Bus\REVERBS	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	MUSIC			\Default Work Unit\Master Audio Bus\MUSIC	
