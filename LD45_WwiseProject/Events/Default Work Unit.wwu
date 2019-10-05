@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8B8516EF-2BCE-4A3C-A880-38237C97ACC1}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{8B8516EF-2BCE-4A3C-A880-38237C97ACC1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Intro_Music" ID="{CBFC7C04-A79A-4AD2-A411-7860CBB56C3B}">
+					<ChildrenList>
+						<Action Name="" ID="{06282902-EDEA-48E6-A54C-3E634B190DDE}" ShortID="977939973">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Video Game, Music, Level 1 SND29806 1" ID="{54859099-0536-4DCC-AE3D-8FE38F29561D}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Screw_Movement" ID="{E958D985-37C5-4C5A-A892-8C4BB282E503}">
+					<ChildrenList>
+						<Action Name="" ID="{B1BD1CBA-E2B3-49D9-9D6F-394935606B96}" ShortID="685553999">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Movement" ID="{59AB4C63-9E81-4EFA-9652-BD34885D928C}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

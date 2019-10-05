@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1082678885	Screw_Movement			\Default Work Unit\Screw_Movement	
+	1539411869	Intro_Music			\Default Work Unit\Intro_Music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	891429978	Video Game, Music, Level 1 SND29806 1	D:\Desktop\LD45\LD45_WwiseProject\.cache\Windows\SFX\Video Game, Music, Level 1 SND29806 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUSIC\Video Game, Music, Level 1 SND29806 1		1136684
+	1057227399	Movement	D:\Desktop\LD45\LD45_WwiseProject\.cache\Windows\SFX\Metal Cart, Roll, Light SND8204_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CHARACTER\SFX\Movement		1424472
+
