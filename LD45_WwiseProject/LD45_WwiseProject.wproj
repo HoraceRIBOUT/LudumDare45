@@ -8681,6 +8681,63 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
+				<SharedPropertyList ClassName="ASIO Output" PluginType="7" CompanyID="0" PluginID="168">
+					<PropertyList>
+						<Property Name="BaseChannel" Type="int32">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ChannelConfig" Type="int32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Color" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</SharedPropertyList>
+				<SharedPropertyList ClassName="Wwise Channel Router" PluginType="6" CompanyID="0" PluginID="172">
+					<PropertyList>
+						<Property Name="Color" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</SharedPropertyList>
+				<SharedPropertyList ClassName="AttachableMixerInput" PluginType="3" CompanyID="0" PluginID="173">
+					<PropertyList>
+						<Property Name="Channel" Type="Real32">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</SharedPropertyList>
 				<SharedPropertyList ClassName="System" PluginType="7" CompanyID="0" PluginID="174">
 					<PropertyList>
 						<Property Name="Color" Type="int16">
@@ -8828,6 +8885,20 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
+				<SharedPropertyList ClassName="ASIO Input" PluginType="2" CompanyID="0" PluginID="204">
+					<PropertyList>
+						<Property Name="BaseChannel" Type="int32">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ChannelConfig" Type="int32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</SharedPropertyList>
 				<SharedPropertyList ClassName="BatchRenameSettings" PluginType="0" CompanyID="0" PluginID="992">
 					<PropertyList>
 						<Property Name="ApplyOn" Type="int16">
@@ -8950,7 +9021,7 @@
 				<ObsOccCurves>
 					<Comment></Comment>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="Volume">
-						<PlatformCurve Platform="Linked" EnableCurve="true">
+						<PlatformCurve Platform="Linked" EnableCurve="false">
 							<Curve Name="" ID="{FB68F9FB-9882-438C-AA95-748FF9031ADC}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3"/>
@@ -8971,7 +9042,7 @@
 						</PlatformCurve>
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="LPF">
-						<PlatformCurve Platform="Linked" EnableCurve="true">
+						<PlatformCurve Platform="Linked" EnableCurve="false">
 							<Curve Name="" ID="{83519CE5-8E24-4825-BDCA-D5814B31CEEE}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1"/>
@@ -9013,7 +9084,7 @@
 						</PlatformCurve>
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="Volume">
-						<PlatformCurve Platform="Linked" EnableCurve="true">
+						<PlatformCurve Platform="Linked" EnableCurve="false">
 							<Curve Name="" ID="{CEDD2823-AD9F-4691-8364-E454AEE56DDF}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3"/>
@@ -9034,7 +9105,7 @@
 						</PlatformCurve>
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="LPF">
-						<PlatformCurve Platform="Linked" EnableCurve="true">
+						<PlatformCurve Platform="Linked" EnableCurve="false">
 							<Curve Name="" ID="{93D36F3F-FFE4-4C2F-BB65-6713C7C861AE}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1"/>
