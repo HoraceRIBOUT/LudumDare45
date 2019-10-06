@@ -885,6 +885,52 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<BlendContainer Name="Player_PickupGear" ID="{BB12D16E-FA5A-4363-822C-B848C9A5B86F}" ShortID="545199709">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{199D2935-2FF9-4C08-B755-7AC5EF9C2997}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="20"/>
+															<Property Name="Min" Type="Real64" Value="-20"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Player_Pickup_Item" ID="{3119BC18-357E-423F-8354-34D7A3E5E4CA}" ShortID="180870297">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Pickup_Item" ID="{2D645DFE-7FA2-4FE1-AD4D-D03412838FD8}" ShortID="925730593">
+													<Language>SFX</Language>
+													<AudioFile>Player_PickupGear\Player_Pickup_Item.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Pickup_Item" ID="{2D645DFE-7FA2-4FE1-AD4D-D03412838FD8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="P_Foley" ID="{4ED68DFF-E381-4E61-96C9-05812CD67AD2}" ShortID="224273076">
@@ -1114,7 +1160,6 @@
 									</ChildrenList>
 									<BlendTrackList>
 										<BlendTrack Name="SURFACES" ID="{8D86C1F3-23A4-4049-9A23-49EBD1C43E9C}" ShortID="508986777">
-											<ReferenceList/>
 											<BlendTrackAssocList>
 												<BlendTrackAssoc>
 													<ItemRef Name="Screw_Moves_RawMetal_Lp_V2" ID="{44C85F87-2AE0-4210-ACAC-8EDCA14E2F7A}"/>

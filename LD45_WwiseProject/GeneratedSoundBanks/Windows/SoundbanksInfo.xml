@@ -32,6 +32,7 @@
 				<Event Id="1068347553" Name="Music_Test" ObjectPath="\Events\Default Work Unit\Music_Test"/>
 				<Event Id="1205858677" Name="Object_Ambiant_Workshop_Fridge_01" ObjectPath="\Events\Default Work Unit\Object_Ambiant_Workshop_Fridge_01"/>
 				<Event Id="1746703344" Name="Object_Ambiant_Workshop_Rat_Hole" ObjectPath="\Events\Default Work Unit\Object_Ambiant_Workshop_Rat_Hole"/>
+				<Event Id="1018305108" Name="Player_PickupGear" ObjectPath="\Events\Default Work Unit\Player_PickupGear"/>
 				<Event Id="998660920" Name="Player_WindFalling" ObjectPath="\Events\Default Work Unit\Player_WindFalling"/>
 				<Event Id="3252105840" Name="Screw_Hit_Gears" ObjectPath="\Events\Default Work Unit\Screw_Hit_Gears"/>
 				<Event Id="337504512" Name="Screw_Movement_Gears" ObjectPath="\Events\Default Work Unit\Screw_Movement_Gears"/>
@@ -47,7 +48,7 @@
 				</File>
 				<File Id="15998756" Language="SFX">
 					<ShortName>FB\FB_Updates.wav</ShortName>
-					<Path>SFX\FB\FB_Updates_5A66E0E4.wem</Path>
+					<Path>SFX\FB\FB_Updates_40BC7B06.wem</Path>
 				</File>
 				<File Id="27078415" Language="SFX">
 					<ShortName>Amb_Workshop_Air_Slow_Lp.wav</ShortName>
@@ -75,11 +76,11 @@
 				</File>
 				<File Id="89195244" Language="SFX">
 					<ShortName>FB\FB_Updates.wav</ShortName>
-					<Path>SFX\FB\FB_Updates_ACA2D55E.wem</Path>
+					<Path>SFX\FB\FB_Updates_48EEB4ED.wem</Path>
 				</File>
 				<File Id="97960061" Language="SFX">
 					<ShortName>Player_Spring_Hit\Spring_HitGround.wav</ShortName>
-					<Path>SFX\Player_Spring_Hit\Spring_HitGround_5C3343FE.wem</Path>
+					<Path>SFX\Player_Spring_Hit\Spring_HitGround_ADED0608.wem</Path>
 				</File>
 				<File Id="102572542" Language="SFX">
 					<ShortName>Amb_Workshop_UnderTable_Lp.wav</ShortName>
@@ -95,7 +96,7 @@
 				</File>
 				<File Id="146607084" Language="SFX">
 					<ShortName>Player_Spring_Hit\Spring_HitGround.wav</ShortName>
-					<Path>SFX\Player_Spring_Hit\Spring_HitGround_AB395002.wem</Path>
+					<Path>SFX\Player_Spring_Hit\Spring_HitGround_BF59E1C4.wem</Path>
 				</File>
 				<File Id="149946540" Language="SFX">
 					<ShortName>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_02.wav</ShortName>
@@ -111,7 +112,7 @@
 				</File>
 				<File Id="164957286" Language="SFX">
 					<ShortName>FB\FB_Updates.wav</ShortName>
-					<Path>SFX\FB\FB_Updates_89948352.wem</Path>
+					<Path>SFX\FB\FB_Updates_EFF47507.wem</Path>
 				</File>
 				<File Id="169863240" Language="SFX">
 					<ShortName>SCREW\Screw_Moves_Wood_Lp.wav</ShortName>
@@ -135,7 +136,7 @@
 				</File>
 				<File Id="215731714" Language="SFX">
 					<ShortName>POSITIF 2.wav</ShortName>
-					<Path>SFX\POSITIF 2_6E4FAD49.wem</Path>
+					<Path>SFX\POSITIF 2_1FC9E7EC.wem</Path>
 				</File>
 				<File Id="217653966" Language="SFX">
 					<ShortName>Player_Screw_Hit_RawMetal\Player_Screw_Hit_RawMetal_03.wav</ShortName>
@@ -155,7 +156,7 @@
 				</File>
 				<File Id="268505114" Language="SFX">
 					<ShortName>NORMAL.wav</ShortName>
-					<Path>SFX\NORMAL_E61A5A6F.wem</Path>
+					<Path>SFX\NORMAL_DD6FA1C6.wem</Path>
 				</File>
 				<File Id="287406291" Language="SFX">
 					<ShortName>Little Rat 2.wav</ShortName>
@@ -219,7 +220,7 @@
 				</File>
 				<File Id="396319494" Language="SFX">
 					<ShortName>Player_Spring_Hit\Spring_HitGround.wav</ShortName>
-					<Path>SFX\Player_Spring_Hit\Spring_HitGround_6B26D966.wem</Path>
+					<Path>SFX\Player_Spring_Hit\Spring_HitGround_AECD50DB.wem</Path>
 				</File>
 				<File Id="412372338" Language="SFX">
 					<ShortName>Player_JumpSping_02.wav</ShortName>
@@ -251,7 +252,7 @@
 				</File>
 				<File Id="451727750" Language="SFX">
 					<ShortName>Player_Spring_Hit\Spring_HitGround.wav</ShortName>
-					<Path>SFX\Player_Spring_Hit\Spring_HitGround_75D2BDAC.wem</Path>
+					<Path>SFX\Player_Spring_Hit\Spring_HitGround_6C7C6BF5.wem</Path>
 				</File>
 				<File Id="456399260" Language="SFX">
 					<ShortName>Tools, Shovel, Metal, Hit Concrete Floor 2 SND29267.wav</ShortName>
@@ -259,7 +260,7 @@
 				</File>
 				<File Id="471069123" Language="SFX">
 					<ShortName>FB\FB_Updates.wav</ShortName>
-					<Path>SFX\FB\FB_Updates_71069620.wem</Path>
+					<Path>SFX\FB\FB_Updates_2CA898F7.wem</Path>
 				</File>
 				<File Id="474099346" Language="SFX">
 					<ShortName>Rat's life.wav</ShortName>
@@ -271,7 +272,7 @@
 				</File>
 				<File Id="492881336" Language="SFX">
 					<ShortName>Blowtorch_Gas_Release_01.wav</ShortName>
-					<Path>SFX\Blowtorch_Gas_Release_01_64625651.wem</Path>
+					<Path>SFX\Blowtorch_Gas_Release_01_75C16F63.wem</Path>
 				</File>
 				<File Id="498095128" Language="SFX">
 					<ShortName>Big Rat.wav</ShortName>
@@ -295,7 +296,7 @@
 				</File>
 				<File Id="570119347" Language="SFX">
 					<ShortName>Player_Spring_Hit\Spring_HitGround.wav</ShortName>
-					<Path>SFX\Player_Spring_Hit\Spring_HitGround_CBABA743.wem</Path>
+					<Path>SFX\Player_Spring_Hit\Spring_HitGround_61FD89C9.wem</Path>
 				</File>
 				<File Id="572981973" Language="SFX">
 					<ShortName>Object_Ambiant_Workshop_Fridge_01.wav</ShortName>
@@ -319,7 +320,7 @@
 				</File>
 				<File Id="614925013" Language="SFX">
 					<ShortName>FB\FB_Updates.wav</ShortName>
-					<Path>SFX\FB\FB_Updates_EA41C400.wem</Path>
+					<Path>SFX\FB\FB_Updates_60B47CE2.wem</Path>
 				</File>
 				<File Id="621077961" Language="SFX">
 					<ShortName>AWCK ADD Bullet Impact Metal.wav</ShortName>
@@ -363,7 +364,7 @@
 				</File>
 				<File Id="707524655" Language="SFX">
 					<ShortName>Blowtorch_Gas_Lp.wav</ShortName>
-					<Path>SFX\Blowtorch_Gas_Lp_6CA76D09.wem</Path>
+					<Path>SFX\Blowtorch_Gas_Lp_7FDAE8A6.wem</Path>
 				</File>
 				<File Id="712669066" Language="SFX">
 					<ShortName>Rat's life.wav</ShortName>
@@ -375,11 +376,11 @@
 				</File>
 				<File Id="729827641" Language="SFX">
 					<ShortName>Player_Spring_Hit\Spring_HitGround.wav</ShortName>
-					<Path>SFX\Player_Spring_Hit\Spring_HitGround_9B207FF7.wem</Path>
+					<Path>SFX\Player_Spring_Hit\Spring_HitGround_50DDEC35.wem</Path>
 				</File>
 				<File Id="731157941" Language="SFX">
 					<ShortName>Blowtorch_Gas_Release_01.wav</ShortName>
-					<Path>SFX\Blowtorch_Gas_Release_01_52171746.wem</Path>
+					<Path>SFX\Blowtorch_Gas_Release_01_88B48F11.wem</Path>
 				</File>
 				<File Id="732406516" Language="SFX">
 					<ShortName>AWCK ADD Metal Sweetener Large 02.wav</ShortName>
@@ -391,11 +392,11 @@
 				</File>
 				<File Id="736862746" Language="SFX">
 					<ShortName>BACK.wav</ShortName>
-					<Path>SFX\BACK_4C47E561.wem</Path>
+					<Path>SFX\BACK_F7C41BA4.wem</Path>
 				</File>
 				<File Id="747552381" Language="SFX">
 					<ShortName>POSITIF.wav</ShortName>
-					<Path>SFX\POSITIF_32018E96.wem</Path>
+					<Path>SFX\POSITIF_B0151FA0.wem</Path>
 				</File>
 				<File Id="749879289" Language="SFX">
 					<ShortName>Player_WindFalling\Player_WindFalling_Medium.wav</ShortName>
@@ -411,7 +412,7 @@
 				</File>
 				<File Id="780814146" Language="SFX">
 					<ShortName>Player_Spring_Hit\Spring_HitGround.wav</ShortName>
-					<Path>SFX\Player_Spring_Hit\Spring_HitGround_1D50CBDC.wem</Path>
+					<Path>SFX\Player_Spring_Hit\Spring_HitGround_5749B5CE.wem</Path>
 				</File>
 				<File Id="785765689" Language="SFX">
 					<ShortName>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_05.wav</ShortName>
@@ -419,7 +420,7 @@
 				</File>
 				<File Id="787222677" Language="SFX">
 					<ShortName>Blowtorch_Hit\Blowtorch_Hit_01.wav</ShortName>
-					<Path>SFX\Blowtorch_Hit\Blowtorch_Hit_01_9CD2D58F.wem</Path>
+					<Path>SFX\Blowtorch_Hit\Blowtorch_Hit_01_6574C90B.wem</Path>
 				</File>
 				<File Id="788373505" Language="SFX">
 					<ShortName>AWCK ADD Metal Sweetener Large 04.wav</ShortName>
@@ -447,11 +448,11 @@
 				</File>
 				<File Id="870583727" Language="SFX">
 					<ShortName>FB\FB_Updates.wav</ShortName>
-					<Path>SFX\FB\FB_Updates_7292D0EC.wem</Path>
+					<Path>SFX\FB\FB_Updates_688A2A6F.wem</Path>
 				</File>
 				<File Id="886606104" Language="SFX">
 					<ShortName>Blowtorch_Hit\Blowtorch_Hit_02.wav</ShortName>
-					<Path>SFX\Blowtorch_Hit\Blowtorch_Hit_02_02580EAA.wem</Path>
+					<Path>SFX\Blowtorch_Hit\Blowtorch_Hit_02_2BDCA948.wem</Path>
 				</File>
 				<File Id="891429978" Language="SFX">
 					<ShortName>Video Game, Music, Level 1 SND29806 1.wav</ShortName>
@@ -465,9 +466,13 @@
 					<ShortName>Player_JumpSping_04.wav</ShortName>
 					<Path>SFX\Player_JumpSping_04_6296B0F9.wem</Path>
 				</File>
+				<File Id="925730593" Language="SFX">
+					<ShortName>Player_PickupGear\Player_Pickup_Item.wav</ShortName>
+					<Path>SFX\Player_PickupGear\Player_Pickup_Item_6296B0F9.wem</Path>
+				</File>
 				<File Id="926002060" Language="SFX">
 					<ShortName>FB\FB_Updates.wav</ShortName>
-					<Path>SFX\FB\FB_Updates_44DF8120.wem</Path>
+					<Path>SFX\FB\FB_Updates_604582A1.wem</Path>
 				</File>
 				<File Id="969898955" Language="SFX">
 					<ShortName>Player_Blowtorch_02.wav</ShortName>
@@ -495,7 +500,7 @@
 				</File>
 				<File Id="1063539029" Language="SFX">
 					<ShortName>Player_Spring_Hit\Spring_HitGround.wav</ShortName>
-					<Path>SFX\Player_Spring_Hit\Spring_HitGround_D190D571.wem</Path>
+					<Path>SFX\Player_Spring_Hit\Spring_HitGround_F8CD12FE.wem</Path>
 				</File>
 				<File Id="1067185360" Language="SFX">
 					<ShortName>Little Rat 2.wav</ShortName>
