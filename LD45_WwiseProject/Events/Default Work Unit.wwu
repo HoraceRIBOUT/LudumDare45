@@ -47,17 +47,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Player_JumpSpring" ID="{9F1BCEE9-2F89-47E7-AF94-D20F3003CCC4}">
-					<ChildrenList>
-						<Action Name="" ID="{CBB2F3FA-AB4A-4ED7-8427-2AB5F4E3E9CA}" ShortID="607140846">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Player_JumpSpring" ID="{55BED6E7-69B2-4C5A-955E-C50030945F05}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Object_Ambiant_Workshop_Rat_Hole" ID="{D7F98179-A6DF-4107-A901-FF4A7BCB61A9}">
 					<ChildrenList>
 						<Action Name="" ID="{0F08BD2D-7B3F-4940-B99D-7436D51F23AE}" ShortID="863136644">
@@ -97,6 +86,72 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Player_WindFalling" ID="{083D2E5A-F334-493E-B22C-58B04CB219E2}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Menu_Clic" ID="{B1887F81-2FEC-4D32-AA3E-6D544B29C83B}">
+					<ChildrenList>
+						<Action Name="" ID="{E09EADFD-1836-4BAE-B8BC-004801930C8B}" ShortID="359591848">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu_Clic" ID="{6E7BBA49-2CFE-42A0-AD02-320241DDA8CC}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Menu_Back" ID="{907C21D7-9654-4198-8B6A-6C1567B6B195}">
+					<ChildrenList>
+						<Action Name="" ID="{6E726759-0A78-4688-B0C5-8627524C84E0}" ShortID="826566775">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu_Back" ID="{672A00ED-FFEF-43F5-9E5B-220443380BF4}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Menu_MouseOn" ID="{C586A768-ABA2-4F50-9E72-2FCBFD274B0F}">
+					<ChildrenList>
+						<Action Name="" ID="{6EA91496-E2E4-4B86-BBD7-78D4DAE72588}" ShortID="983041346">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu_MouseOn" ID="{BD6A6A96-B153-4205-93EF-6DBED3AC3A11}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FB_Updates" ID="{9F99874B-ED31-444B-A51F-0BD2C63BD993}">
+					<ChildrenList>
+						<Action Name="" ID="{DFAFDC6E-FB6E-4EAA-89A4-CEA568393EA1}" ShortID="343096661">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FB_Updates" ID="{921790F2-DDC2-4921-83AB-247AB56DD4BD}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Blowtorch_Gas_Release" ID="{A80696EC-80D0-4E71-8391-043EC65AF5A4}">
+					<ChildrenList>
+						<Action Name="" ID="{968DF971-A9F6-4633-9B09-E73239B160A9}" ShortID="905623500">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Blowtorch_Gas_Release" ID="{87C62BD8-4A4F-45D5-B13B-C74185CDB4CF}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Blowtorch_Gas_Hold" ID="{5E559CCC-686D-430E-A987-8FA346A1F52C}">
+					<ChildrenList>
+						<Action Name="" ID="{7B61C7DA-C984-4966-BDE9-A36E50521674}" ShortID="1036750845">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Blowtorch_Gas_Lp" ID="{D79A3427-D505-432C-B8EB-E4E34796E492}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

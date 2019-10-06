@@ -574,6 +574,317 @@
 										</BlendTrack>
 									</BlendTrackList>
 								</BlendContainer>
+								<BlendContainer Name="Blowtorch_Gas_Lp" ID="{D79A3427-D505-432C-B8EB-E4E34796E492}" ShortID="747175708">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Blowtorch_Gas_Lp" ID="{9A8CCFBB-4613-42E3-BDFB-AB761B33DDA0}" ShortID="746246169">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>80</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Blowtorch_Gas_Lp" ID="{72587FEF-1C4E-4EDE-A896-F34988B28095}" ShortID="707524655">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="141.331836217074"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.48770353912709E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.48770353912706E-02"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.070665918108537"/>
+														<Property Name="LoopEnd" Type="Real64" Value="8.37949018413335"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Blowtorch_Gas_Lp.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{6C2A187D-FCEF-453A-9590-C6711A5D3BD1}">
+													<PropertyList>
+														<Property Name="PanX" Type="Real64" Value="23.2375979112271"/>
+														<Property Name="PanY" Type="Real64" Value="53.5911602209945"/>
+													</PropertyList>
+												</Panner>
+											</PositioningInfo>
+											<ActiveSourceList>
+												<ActiveSource Name="Blowtorch_Gas_Lp" ID="{72587FEF-1C4E-4EDE-A896-F34988B28095}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="Blowtorch_Gas" ID="{FF0E8D36-A202-480D-9FA8-583C3F4C6C9B}" ShortID="1009536130">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{D4CB50B9-539A-4D42-B3E7-C827CCF7E296}" ShortID="196684397">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Blowtorch_Hold" ID="{E7E08878-8695-4459-8BF3-0E85E5B0DE79}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{47EA948F-F624-46B1-90CF-5FD248575C20}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>45</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.26755</XPos>
+																		<YPos>25</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{516DF20A-C38A-44F9-81C4-AE6563EC1F29}" ShortID="606408899">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Blowtorch_Hold" ID="{E7E08878-8695-4459-8BF3-0E85E5B0DE79}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{45BC98A5-96B7-4F91-83A1-17FCB1DD32B1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="Blowtorch_Gas_Lp" ID="{9A8CCFBB-4613-42E3-BDFB-AB761B33DDA0}"/>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<RandomSequenceContainer Name="Blowtorch_Gas_Release" ID="{87C62BD8-4A4F-45D5-B13B-C74185CDB4CF}" ShortID="591538584">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8E12FFBF-53F2-4E8E-A5D6-010C60BF82E3}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="60"/>
+															<Property Name="Min" Type="Real64" Value="-60"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+											<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Blowtorch_Gas_Release_01" ID="{0225CA07-26C5-4BFD-8345-EC974D4B4786}" ShortID="166980553">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Blowtorch_Gas_Release_01" ID="{4FA9B2BA-4984-4505-A18A-EC409C749CD9}" ShortID="191579612">
+													<Language>SFX</Language>
+													<AudioFile>Blowtorch_Gas_Release_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Blowtorch_Gas_Release_01" ID="{4FA9B2BA-4984-4505-A18A-EC409C749CD9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="New Sequence Container" ID="{5867ECE6-041C-446B-BC6F-F359F5FDC599}" ShortID="986802645">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>150</Value>
+													</ValueList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Blowtorch_Gas_Release_02" ID="{A218E70C-658A-4C67-AA86-666F56A8B631}" ShortID="434316927">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>30</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-300</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Blowtorch_Gas_Release_01" ID="{74CE5195-4AAA-4DA0-AD30-E7DC21DB5A59}" ShortID="492881336">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="4.13777451279019E-02"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.03444362819755E-03"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.011378879910173"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.126546937182833"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Blowtorch_Gas_Release_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Blowtorch_Gas_Release_01" ID="{74CE5195-4AAA-4DA0-AD30-E7DC21DB5A59}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Blowtorch_Gas_Release_03" ID="{91426A3E-777F-4453-B3B8-A7849504ED4B}" ShortID="18491588">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>30</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>450</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Blowtorch_Gas_Release_01" ID="{E3519349-E894-4AFD-A2B3-029310BFD2A7}" ShortID="731157941">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="4.13777451279021E-03"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.371710077065652"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.189992813045616"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.692387601806892"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Blowtorch_Gas_Release_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Blowtorch_Gas_Release_01" ID="{E3519349-E894-4AFD-A2B3-029310BFD2A7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Blowtorch_Gas_Release_02" ID="{A218E70C-658A-4C67-AA86-666F56A8B631}"/>
+												<ItemRef Name="Blowtorch_Gas_Release_03" ID="{91426A3E-777F-4453-B3B8-A7849504ED4B}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="P_Foley" ID="{4ED68DFF-E381-4E61-96C9-05812CD67AD2}" ShortID="224273076">
@@ -803,78 +1114,19 @@
 									</ChildrenList>
 									<BlendTrackList>
 										<BlendTrack Name="SURFACES" ID="{8D86C1F3-23A4-4049-9A23-49EBD1C43E9C}" ShortID="508986777">
-											<PropertyList>
-												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<RTPCList>
-														<RTPC Name="" ID="{DEEA1A02-273A-4A36-B1CB-3E58A8A07CFD}" ShortID="454040012">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="Surfaces" ID="{56BAF697-62B8-4283-A0AD-D495C2C62B3A}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{1C4CA3C7-9A8B-4035-AAA2-B03A6BCD196A}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>40</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="LayerCrossFadeControlInput">
-													<ObjectRef Name="Surfaces" ID="{56BAF697-62B8-4283-A0AD-D495C2C62B3A}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
-												</Reference>
-											</ReferenceList>
+											<ReferenceList/>
 											<BlendTrackAssocList>
 												<BlendTrackAssoc>
 													<ItemRef Name="Screw_Moves_RawMetal_Lp_V2" ID="{44C85F87-2AE0-4210-ACAC-8EDCA14E2F7A}"/>
-													<CrossfadingInfo>
-														<LeftEdgePos>1</LeftEdgePos>
-														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>15.0079745762712</RightEdgePos>
-														<RightFadingMode>Automatic</RightFadingMode>
-													</CrossfadingInfo>
 												</BlendTrackAssoc>
 												<BlendTrackAssoc>
 													<ItemRef Name="Screw_Moves_Concrete_Lp" ID="{3C3CA04E-8EAB-4D1F-9D78-AC01C9B756D4}"/>
-													<CrossfadingInfo>
-														<LeftEdgePos>4.99641460234681</LeftEdgePos>
-														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>25.0254237288136</RightEdgePos>
-														<RightFadingMode>Automatic</RightFadingMode>
-													</CrossfadingInfo>
 												</BlendTrackAssoc>
 												<BlendTrackAssoc>
 													<ItemRef Name="Screw_Moves_HollowMetal_Lp" ID="{43C4B044-1DA1-454C-B663-9D7B2A61DAD3}"/>
-													<CrossfadingInfo>
-														<LeftEdgePos>15.0079745762712</LeftEdgePos>
-														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>35.0037372881356</RightEdgePos>
-														<RightFadingMode>Automatic</RightFadingMode>
-													</CrossfadingInfo>
 												</BlendTrackAssoc>
 												<BlendTrackAssoc>
 													<ItemRef Name="Screw_Moves_Wood_Lp" ID="{F411ED98-FE10-4AFF-94C0-7F864B7ABE34}"/>
-													<CrossfadingInfo>
-														<LeftEdgePos>25.0254237288136</LeftEdgePos>
-														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>40</RightEdgePos>
-														<RightFadingMode>Automatic</RightFadingMode>
-													</CrossfadingInfo>
 												</BlendTrackAssoc>
 											</BlendTrackAssocList>
 										</BlendTrack>
@@ -3152,23 +3404,6 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<SwitchContainer Name="FOUR_GEARS" ID="{A7FA38B8-1456-4E94-802B-A24F3D80E357}" ShortID="773651677">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
-														</Reference>
-														<Reference Name="DefaultSwitchOrState">
-															<ObjectRef Name="Concrete" ID="{289ADDCD-6C14-4411-8FDA-0B0545940D4F}" WorkUnitID="{C8FBA1BA-9FAE-4718-BDD4-94727EE8F663}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
-														</Reference>
-														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="Material" ID="{ADD8B225-932A-4161-A26C-4AB90CE9A941}" WorkUnitID="{C8FBA1BA-9FAE-4718-BDD4-94727EE8F663}"/>
-														</Reference>
-													</ReferenceList>
-													<GroupingInfo/>
-												</SwitchContainer>
 												<SwitchContainer Name="ONE_GEAR" ID="{BEAD906B-092D-46B1-B49E-05754D1690F1}" ShortID="592581007">
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -3815,7 +4050,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_01.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="957401958"/>
+																						<File ID="341358308"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -3859,7 +4094,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_03.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="915608787"/>
+																						<File ID="335799531"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -3881,7 +4116,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_04.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="403089685"/>
+																						<File ID="238611567"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -3903,7 +4138,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_05.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="969511051"/>
+																						<File ID="206151139"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -3990,7 +4225,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_01.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="957401958"/>
+																						<File ID="341358308"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -4034,7 +4269,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_03.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="915608787"/>
+																						<File ID="335799531"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -4056,7 +4291,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_04.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="403089685"/>
+																						<File ID="238611567"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -4078,7 +4313,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_05.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="969511051"/>
+																						<File ID="206151139"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -4266,7 +4501,2303 @@
 															<ObjectRef Name="Material" ID="{ADD8B225-932A-4161-A26C-4AB90CE9A941}" WorkUnitID="{C8FBA1BA-9FAE-4718-BDD4-94727EE8F663}"/>
 														</Reference>
 													</ReferenceList>
-													<GroupingInfo/>
+													<ChildrenList>
+														<BlendContainer Name="Player_Screw_Hit_Concrete_3G" ID="{E4F63C2E-2691-4906-9B4E-453A01316224}" ShortID="64708153">
+															<PropertyList>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="Player_Screw_Hit_Concrete_Low" ID="{63E9C481-A2A5-4936-85F7-BB25B5F4E08A}" ShortID="3887696">
+																	<PropertyList>
+																		<Property Name="Lowpass" Type="int16">
+																			<ValueList>
+																				<Value>29</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{5C15D102-5B38-4D1D-83A2-549C04AFC1E2}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="25"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="OverrideEffect" Type="bool" Value="True"/>
+																		<Property Name="Pitch" Type="int32">
+																			<ValueList>
+																				<Value>-1090</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{DE5D9CE3-0276-4B86-A93C-218AC456E7AB}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="30"/>
+																							<Property Name="Min" Type="Real64" Value="-30"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>3</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{E53FD0BD-D756-4808-91A9-CCE0ECB314D1}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="3"/>
+																							<Property Name="Min" Type="Real64" Value="-5"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																		</Reference>
+																		<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+																			<ObjectRef Name="High_Impact" ID="{2AFD6FB0-C906-4683-A377-FEEEF72967B0}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Player_Screw_Hit_Concrete_01" ID="{7B6CBB71-8750-4798-B274-11D92CE812C7}" ShortID="384477091">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Concrete_01" ID="{F4404AB6-ACB5-421C-9788-C24D1B46A8CD}" ShortID="25340178">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_01.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="341358308"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Concrete_01" ID="{F4404AB6-ACB5-421C-9788-C24D1B46A8CD}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Concrete_02" ID="{459379E9-20AF-4428-B77A-4BD084AAC569}" ShortID="712802978">
+																			<PropertyList>
+																				<Property Name="Inclusion" Type="bool">
+																					<ValueList>
+																						<Value>False</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Concrete_02" ID="{9A45CFB9-B0CD-4F5E-9094-CD2A24E34EE3}" ShortID="651147512">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_02.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="34105893"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Concrete_02" ID="{9A45CFB9-B0CD-4F5E-9094-CD2A24E34EE3}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Concrete_03" ID="{5D593CEB-D275-4A66-8947-28507CA985F2}" ShortID="938134664">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Concrete_03" ID="{2EB06E6F-78C7-422A-AF8B-9864BDBDC6A1}" ShortID="176374048">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_03.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="335799531"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Concrete_03" ID="{2EB06E6F-78C7-422A-AF8B-9864BDBDC6A1}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Concrete_04" ID="{FC0F6662-EF91-45A5-9916-98B680535C75}" ShortID="344422472">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Concrete_04" ID="{6C948C47-DF0C-4813-82EA-46C2498BF3ED}" ShortID="849734035">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_04.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="238611567"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Concrete_04" ID="{6C948C47-DF0C-4813-82EA-46C2498BF3ED}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Concrete_05" ID="{E48371B8-65AB-4EB2-A432-08DFCF4449D2}" ShortID="185628517">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Concrete_05" ID="{E2BF4D6A-D2DF-4E75-B4AA-513B4B0738E0}" ShortID="93914022">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_05.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="206151139"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Concrete_05" ID="{E2BF4D6A-D2DF-4E75-B4AA-513B4B0738E0}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Player_Screw_Hit_Conrete_Medium" ID="{853BAB45-61F4-46CE-BE25-3BE89A7E7437}" ShortID="644503385">
+																	<PropertyList>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{E1E97F2E-A044-430E-9F92-76F641D0CC45}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="60"/>
+																							<Property Name="Min" Type="Real64" Value="-60"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-5</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{853E8C5A-AD92-4913-A504-3EFE3DD4DF63}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Min" Type="Real64" Value="-3"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Player_Screw_Hit_Conrete_Medium_02" ID="{6B95ACC4-C277-4AAD-B8AD-970B9C8CCDE2}" ShortID="128547897">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Tools, Shovel, Metal, Hit Concrete Floor 2 SND29267" ID="{B39A8858-7378-4E8F-BD1E-990325EDD969}" ShortID="134111424">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="2.55634981612529E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.403467333133814"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="7.00792449592968E-03"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="0.496601828831069"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Tools, Shovel, Metal, Hit Concrete Floor 2 SND29267.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="456399260"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Tools, Shovel, Metal, Hit Concrete Floor 2 SND29267" ID="{B39A8858-7378-4E8F-BD1E-990325EDD969}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Conrete_Medium_01" ID="{785E5F63-B12F-40A0-996D-015C887F93F4}" ShortID="727947664">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Tools, Shovel, Metal, Hit Concrete Floor 1 SND29268" ID="{FA143290-DB75-4E4F-AD7F-9C0FB8282BEA}" ShortID="206615062">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="1.13553240740741E-02"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.202773644179894"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="1.62218915343915E-02"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="0.446102017195767"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Tools, Shovel, Metal, Hit Concrete Floor 1 SND29268.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="488360678"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Tools, Shovel, Metal, Hit Concrete Floor 1 SND29268" ID="{FA143290-DB75-4E4F-AD7F-9C0FB8282BEA}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Conrete_Medium_03" ID="{7CF4662E-1F00-417B-9D6C-7DA2DFCE69A5}" ShortID="861657941">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Tools, Shovel, Metal, Hit Concrete Floor 3 SND29266" ID="{C505F7A9-B0E5-4A97-83FB-1B7FAB7E53D4}" ShortID="744583924">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="1.9017912291538E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="6.44231778875849E-02"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="2.16328752316245E-02"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="0.276591761890056"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Tools, Shovel, Metal, Hit Concrete Floor 3 SND29266.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="656458444"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Tools, Shovel, Metal, Hit Concrete Floor 3 SND29266" ID="{C505F7A9-B0E5-4A97-83FB-1B7FAB7E53D4}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Player_Screw_Hit_Concrete_Blowtorch" ID="{712C4B8C-0E2A-4AB8-8810-D6E536C62B6A}" ShortID="877320635">
+																	<PropertyList>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{4A6D98B7-9A08-40B2-A4D3-A34046D6EED3}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="60"/>
+																							<Property Name="Min" Type="Real64" Value="-60"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-6</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Blowtorch_Hit_01" ID="{6F60C309-8D3D-4110-9396-E7A5E1BCB4BE}" ShortID="455813179">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Blowtorch_Hit_01" ID="{57EE65BD-DB2C-4011-9C47-92B5BAB1AAE5}" ShortID="787222677">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.888369931048392"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.23001506346825"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Blowtorch_Hit\Blowtorch_Hit_01.wav</AudioFile>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Blowtorch_Hit_01" ID="{57EE65BD-DB2C-4011-9C47-92B5BAB1AAE5}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Blowtorch_Hit_03" ID="{EF14E4EC-47A1-4A5E-8A8A-A902A84E60AA}" ShortID="795261040">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ValueList>
+																						<Value>630</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>3</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Blowtorch_Hit_03" ID="{7654D726-B027-4AD2-9695-BAEFE380CE31}" ShortID="211479012">
+																					<Language>SFX</Language>
+																					<AudioFile>Blowtorch_Hit\Blowtorch_Hit_03.wav</AudioFile>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Blowtorch_Hit_03" ID="{7654D726-B027-4AD2-9695-BAEFE380CE31}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Blowtorch_Hit_02" ID="{FAC0ECBA-D344-4F4A-B066-6CF347FCEA11}" ShortID="861100520">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ValueList>
+																						<Value>-300</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-8</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Blowtorch_Hit_02" ID="{0000E15D-7B29-4B0F-8653-831F4B093F2A}" ShortID="886606104">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="1.08519319195663"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.10685539770778"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Blowtorch_Hit\Blowtorch_Hit_02.wav</AudioFile>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Blowtorch_Hit_02" ID="{0000E15D-7B29-4B0F-8653-831F4B093F2A}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Player_Spring_Hit" ID="{78560A4B-71C3-4AFF-8596-1C0521CE6134}" ShortID="259418397">
+																	<PropertyList>
+																		<Property Name="Highpass" Type="int16">
+																			<ValueList>
+																				<Value>31</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Pitch" Type="int32">
+																			<ValueList>
+																				<Value>50</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{7A582DB8-834A-4A7A-8C53-AF75589A098B}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="60"/>
+																							<Property Name="Min" Type="Real64" Value="-60"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-8</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Spring_HitGround" ID="{CF642F2B-FFB2-4191-9593-A6E4C2EC0FDF}" ShortID="866763089">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{7B122904-D24C-4D7C-AF1B-AA85D86A1AA7}" ShortID="707807607">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.83694856571412"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="97960061"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{7B122904-D24C-4D7C-AF1B-AA85D86A1AA7}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_01" ID="{41EE23EF-B23A-4BC9-9708-0A6B2D172781}" ShortID="1016169544">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{F84CC164-9723-483E-9E94-F0C6974126CC}" ShortID="300647417">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="2.8298937363704"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="4.19105607447838"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="396319494"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{F84CC164-9723-483E-9E94-F0C6974126CC}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_02" ID="{E9A0A3CC-6747-4AE4-A9F7-EC2CE86EE956}" ShortID="1055938563">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{8C25B7DD-8D30-462A-B9B0-4795B84E727A}" ShortID="994905870">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="5.3205312060999"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="6.20590731660175"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="570119347"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{8C25B7DD-8D30-462A-B9B0-4795B84E727A}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_03" ID="{D5373CC8-7A9D-4FD7-8B99-EB63BBA9B201}" ShortID="337404391">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{9AA99C81-89CB-4A0C-A9A9-9301C721C7F0}" ShortID="253657362">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="9.44539093586786"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="10.1652761845937"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="1063539029"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{9AA99C81-89CB-4A0C-A9A9-9301C721C7F0}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_04" ID="{21634657-74D4-4BF4-8CB6-423A35AC3C8B}" ShortID="904586896">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{620A7461-D1A9-42F8-9CC2-B279AEDC0D81}" ShortID="281706621">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="12.1015192673734"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="12.8586399599988"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="729827641"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{620A7461-D1A9-42F8-9CC2-B279AEDC0D81}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+															</ChildrenList>
+														</BlendContainer>
+														<BlendContainer Name="Player_Screw_Hit_Wood_3G" ID="{622C028D-3281-4A46-B2D1-CDDCBADCED39}" ShortID="188227591">
+															<PropertyList>
+																<Property Name="OverrideEffect" Type="bool" Value="True"/>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																</Reference>
+																<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+																	<ObjectRef Name="High_Impact" ID="{2AFD6FB0-C906-4683-A377-FEEEF72967B0}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="Player_Screw_Hit_Wood_High" ID="{1DDAE7BD-3FED-4E01-BA4B-EC78A8B29EEA}" ShortID="195664639">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Player_Screw_Hit_Wood_01" ID="{ACA66B59-BE9C-47D1-9084-BC8EA0CF64EB}" ShortID="259526278">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Wood_01" ID="{65FF8244-93E1-4DFF-A2B5-FD7798633886}" ShortID="756406689">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_01.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="514149090"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Wood_01" ID="{65FF8244-93E1-4DFF-A2B5-FD7798633886}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Wood_02" ID="{281781DC-4841-45B7-B274-CDBD932DE195}" ShortID="280274989">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Wood_02" ID="{F96CDC01-90A3-4451-8093-1E503ECCB123}" ShortID="309036789">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_02.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="149946540"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Wood_02" ID="{F96CDC01-90A3-4451-8093-1E503ECCB123}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Wood_03" ID="{90C1ED18-11D0-4F48-85EB-7526C9B64625}" ShortID="969889279">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Wood_03" ID="{227B00E8-5831-451A-8D1F-982468B74535}" ShortID="505411045">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_03.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="853508323"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Wood_03" ID="{227B00E8-5831-451A-8D1F-982468B74535}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Wood_04" ID="{D63CF1BE-51FE-48CD-8F8A-E47935DFA9CD}" ShortID="539471907">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Wood_04" ID="{8B6BE5C2-708A-4A0F-9592-8D5E323125A6}" ShortID="232995372">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_04.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="79346098"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Wood_04" ID="{8B6BE5C2-708A-4A0F-9592-8D5E323125A6}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Wood_05" ID="{D292969D-397F-407D-8787-BF3BE64086C4}" ShortID="618689689">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Wood_05" ID="{77639B76-735B-4A57-A9B2-688A10843FEF}" ShortID="973327275">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_05.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="785765689"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Wood_05" ID="{77639B76-735B-4A57-A9B2-688A10843FEF}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Player_Screw_Hit_Wood_Low" ID="{8EBB4003-3F75-4D05-8FE6-5F5417D7A407}" ShortID="361545648">
+																	<PropertyList>
+																		<Property Name="Pitch" Type="int32">
+																			<ValueList>
+																				<Value>-780</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Player_Screw_Hit_Wood_01" ID="{7BFA8C5C-F614-4F3E-9F38-AAFEE3C82936}" ShortID="883882929">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Wood_01" ID="{FABC2102-9EE9-41F4-AEC5-BF0A4B5FEBFA}" ShortID="996353727">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_01.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="514149090"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Wood_01" ID="{FABC2102-9EE9-41F4-AEC5-BF0A4B5FEBFA}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Wood_02" ID="{6C64206C-D1BD-47E2-A52E-F2EEE9372E22}" ShortID="778526668">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Wood_02" ID="{6BAAEE6C-88C1-4113-8954-67C31D5537AA}" ShortID="936983185">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_02.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="149946540"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Wood_02" ID="{6BAAEE6C-88C1-4113-8954-67C31D5537AA}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Wood_03" ID="{113840BB-7B22-4B3B-A7F8-EA76BA886E78}" ShortID="575379958">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Wood_03" ID="{92DCDFB6-9013-4826-8B02-5FA0603E590D}" ShortID="265663172">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_03.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="853508323"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Wood_03" ID="{92DCDFB6-9013-4826-8B02-5FA0603E590D}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Wood_04" ID="{E4D64EF7-A097-473F-A96E-6FE19D3C4F0E}" ShortID="975061246">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Wood_04" ID="{1DC5CCD7-6768-41A6-9B4B-11770F6514EA}" ShortID="637887883">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_04.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="79346098"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Wood_04" ID="{1DC5CCD7-6768-41A6-9B4B-11770F6514EA}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_Wood_05" ID="{915EAC03-02ED-4807-A7B4-0657874998E7}" ShortID="995374003">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_Wood_05" ID="{256D1E2D-8490-45FA-976B-D83D9FB922D9}" ShortID="503792411">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_05.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="785765689"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_Wood_05" ID="{256D1E2D-8490-45FA-976B-D83D9FB922D9}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Player_Screw_Hit_Concrete_Blowtorch" ID="{F99080D0-B9A3-41F9-ACF3-E1CD37008D4B}" ShortID="800031523">
+																	<PropertyList>
+																		<Property Name="Pitch" Type="int32">
+																			<ValueList>
+																				<Value>-180</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{C463C5EA-21A3-447D-8850-3333B8B3BC3F}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="60"/>
+																							<Property Name="Min" Type="Real64" Value="-60"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-8</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Blowtorch_Hit_01" ID="{BADC5C1A-B4E7-40AD-ABA8-0BFCDAD970D2}" ShortID="1050954663">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Blowtorch_Hit_01" ID="{45D7850E-D0A8-4CAF-9C29-EA11D03F1EEB}" ShortID="683475904">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.888369931048392"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.23001506346825"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Blowtorch_Hit\Blowtorch_Hit_01.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="787222677"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Blowtorch_Hit_01" ID="{45D7850E-D0A8-4CAF-9C29-EA11D03F1EEB}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Blowtorch_Hit_03" ID="{43E8237C-4C7E-425A-AA21-717B2B487E9C}" ShortID="341362369">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ValueList>
+																						<Value>630</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>3</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Blowtorch_Hit_03" ID="{23A6214A-76D0-4492-82D0-0B0A6DDD35E1}" ShortID="70821061">
+																					<Language>SFX</Language>
+																					<AudioFile>Blowtorch_Hit\Blowtorch_Hit_03.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="211479012"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Blowtorch_Hit_03" ID="{23A6214A-76D0-4492-82D0-0B0A6DDD35E1}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Blowtorch_Hit_02" ID="{8985A809-538B-490E-8334-DA7E2CCD039B}" ShortID="478052582">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ValueList>
+																						<Value>-300</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-8</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Blowtorch_Hit_02" ID="{458D5F70-6657-4C28-B3C4-DF381F62ABD0}" ShortID="613743570">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="1.08519319195663"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.10685539770778"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Blowtorch_Hit\Blowtorch_Hit_02.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="886606104"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Blowtorch_Hit_02" ID="{458D5F70-6657-4C28-B3C4-DF381F62ABD0}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Player_Spring_Hit_01" ID="{2F867E16-DCF9-4B2F-A1A9-CBE45E47AE7F}" ShortID="631535584">
+																	<PropertyList>
+																		<Property Name="Highpass" Type="int16">
+																			<ValueList>
+																				<Value>28</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Pitch" Type="int32">
+																			<ValueList>
+																				<Value>-250</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{9AE4F55F-3CFE-4B50-8F1F-CB1CB274A8BF}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="60"/>
+																							<Property Name="Min" Type="Real64" Value="-60"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-6</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Spring_HitGround" ID="{8FDCA010-70E2-4231-88DD-5DF8FB276957}" ShortID="369286386">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{B941920B-F985-4E9E-9CBD-DF03A44E6F05}" ShortID="393376879">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.83694856571412"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="97960061"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{B941920B-F985-4E9E-9CBD-DF03A44E6F05}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_01" ID="{2893CA23-6AE4-4D5E-8B88-506922AE02B1}" ShortID="478390348">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{C38AC9E8-7C69-47D3-8821-C67CAA6F1A66}" ShortID="563182294">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="2.8298937363704"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="4.19105607447838"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="396319494"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{C38AC9E8-7C69-47D3-8821-C67CAA6F1A66}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_02" ID="{55C658C0-15CD-4FC4-B084-9D536CD1CDB5}" ShortID="644873840">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{ACF9187B-7A99-4DEB-BF49-5530EA35542D}" ShortID="964832380">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="5.3205312060999"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="6.20590731660175"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="570119347"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{ACF9187B-7A99-4DEB-BF49-5530EA35542D}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_03" ID="{146ABFC7-BF78-4D27-82D4-A3350A1F561D}" ShortID="576184109">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{362882FF-D75C-4273-AC69-77580B5A9668}" ShortID="43694046">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="9.44539093586786"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="10.1652761845937"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="1063539029"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{362882FF-D75C-4273-AC69-77580B5A9668}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_04" ID="{1B414EA2-8836-4996-9ADA-3F6D287AD7AD}" ShortID="276685926">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{DE9DCA5B-79B5-427E-906E-E24B39C1969F}" ShortID="667282718">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="12.1015192673734"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="12.8586399599988"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="729827641"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{DE9DCA5B-79B5-427E-906E-E24B39C1969F}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+															</ChildrenList>
+														</BlendContainer>
+														<BlendContainer Name="Player_Screw_Hit_HollowMetal_3G" ID="{620A41FE-708F-45B9-BEE3-1778E161E013}" ShortID="947491189">
+															<PropertyList>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="Player_Screw_Hit_HollowMetal_2G" ID="{7FA76E9A-4962-4430-AF51-908E2674E783}" ShortID="810368423">
+																	<PropertyList>
+																		<Property Name="Lowpass" Type="int16">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{6B46D7F8-9615-4127-8784-3CD78154206F}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="25"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{BEFD4419-176B-4CE7-A1D4-68B0C03F6605}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="60"/>
+																							<Property Name="Min" Type="Real64" Value="-60"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{580D47A8-B731-4735-9068-ACD234072324}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="3"/>
+																							<Property Name="Min" Type="Real64" Value="-5"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Player_Screw_Hit_HollowMetal_01" ID="{DC1FBF43-EE0B-44C3-9633-F53A44030EE0}" ShortID="631216256">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_HollowMetal_01" ID="{539B48BF-7096-4912-AC8D-3DC639DA7092}" ShortID="569059633">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_HollowMetal\Player_Screw_Hit_HollowMetal_01.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="257459124"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_HollowMetal_01" ID="{539B48BF-7096-4912-AC8D-3DC639DA7092}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_HollowMetal_02" ID="{280BADA8-03FB-4727-848B-762E767D71E1}" ShortID="527886853">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_HollowMetal_02" ID="{E79A2B0C-4BD1-4E80-ADB0-EA9FD8502C70}" ShortID="587611497">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_HollowMetal\Player_Screw_Hit_HollowMetal_02.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="682477052"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_HollowMetal_02" ID="{E79A2B0C-4BD1-4E80-ADB0-EA9FD8502C70}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_HollowMetal_03" ID="{7A025CBD-1514-4667-9232-9773EAA371B1}" ShortID="357581254">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_HollowMetal_03" ID="{E119AFA3-4976-49CD-A33D-7B0D0FB862DA}" ShortID="242300187">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_HollowMetal\Player_Screw_Hit_HollowMetal_03.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="370478395"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_HollowMetal_03" ID="{E119AFA3-4976-49CD-A33D-7B0D0FB862DA}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Player_Spring_Hit" ID="{6EEEFE20-3BE6-47DC-A4B2-91194E795BCE}" ShortID="70971022">
+																	<PropertyList>
+																		<Property Name="Highpass" Type="int16">
+																			<ValueList>
+																				<Value>22</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Pitch" Type="int32">
+																			<ValueList>
+																				<Value>330</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{64D80637-C689-4D24-B708-B03D791D09B6}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="60"/>
+																							<Property Name="Min" Type="Real64" Value="-60"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-8</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Spring_HitGround" ID="{738EF202-C103-479E-A105-FCD8FA2628D4}" ShortID="200851138">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{7AC936F4-6C99-4035-95FB-6CBD23959E44}" ShortID="714994228">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.83694856571412"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="97960061"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{7AC936F4-6C99-4035-95FB-6CBD23959E44}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_01" ID="{C6E8074D-6A72-47E5-A999-AE1C84D058F8}" ShortID="647525505">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{C9C8A900-E8F1-45DF-8895-D65FDA0067E2}" ShortID="507800962">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="2.8298937363704"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="4.19105607447838"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="396319494"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{C9C8A900-E8F1-45DF-8895-D65FDA0067E2}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_02" ID="{1A56ADA2-FBC0-4C12-8031-5659F174D47D}" ShortID="108395581">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{BC62B87F-6A82-47A5-B35D-6B38B0386EB8}" ShortID="570119347">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="5.3205312060999"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="6.20590731660175"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{BC62B87F-6A82-47A5-B35D-6B38B0386EB8}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_03" ID="{D3A17BDD-AC67-4749-9945-1EC8CD82C81D}" ShortID="963228776">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{91F77132-A435-4AD6-BE49-A5211484690D}" ShortID="1063539029">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="9.44539093586786"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="10.1652761845937"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{91F77132-A435-4AD6-BE49-A5211484690D}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_04" ID="{230C3D63-4BF8-44FA-9635-57CEDBCFB3A3}" ShortID="28298706">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{4912D96B-42B8-4484-BFFC-CF1DD4F8267C}" ShortID="729827641">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="12.1015192673734"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="12.8586399599988"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{4912D96B-42B8-4484-BFFC-CF1DD4F8267C}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Player_Screw_Hit_Concrete_Blowtorch" ID="{BE37B3EE-2F46-4AF1-9283-4197719A052B}" ShortID="148118198">
+																	<PropertyList>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{9853B64E-3D71-409A-8999-CC890DAFD6A5}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="60"/>
+																							<Property Name="Min" Type="Real64" Value="-60"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-6</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Blowtorch_Hit_01" ID="{763BFD42-C74B-4535-AF32-468416F18CA6}" ShortID="822629492">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Blowtorch_Hit_01" ID="{EDF5206C-B95F-45A3-A5C9-FF66965EC6F5}" ShortID="46116778">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.888369931048392"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.23001506346825"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Blowtorch_Hit\Blowtorch_Hit_01.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="787222677"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Blowtorch_Hit_01" ID="{EDF5206C-B95F-45A3-A5C9-FF66965EC6F5}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Blowtorch_Hit_03" ID="{AF8C7023-2639-4949-BDBE-D49AB0B30048}" ShortID="840800920">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ValueList>
+																						<Value>630</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>3</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Blowtorch_Hit_03" ID="{6C06F416-3C51-4A63-BB82-104FF5078C27}" ShortID="819193296">
+																					<Language>SFX</Language>
+																					<AudioFile>Blowtorch_Hit\Blowtorch_Hit_03.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="211479012"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Blowtorch_Hit_03" ID="{6C06F416-3C51-4A63-BB82-104FF5078C27}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Blowtorch_Hit_02" ID="{3C4FD15E-7CC0-4D46-83F6-B8710E005B4F}" ShortID="1006456883">
+																			<PropertyList>
+																				<Property Name="Pitch" Type="int32">
+																					<ValueList>
+																						<Value>-300</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-8</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Blowtorch_Hit_02" ID="{F2512E15-0972-4442-8F70-5439BA040616}" ShortID="343319902">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="1.08519319195663"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.10685539770778"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Blowtorch_Hit\Blowtorch_Hit_02.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="886606104"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Blowtorch_Hit_02" ID="{F2512E15-0972-4442-8F70-5439BA040616}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+															</ChildrenList>
+														</BlendContainer>
+														<BlendContainer Name="Player_Screw_Hit_RawMetal_3G" ID="{ECC1BADA-65A9-4B3C-9254-26E3FC82CB6D}" ShortID="143994949">
+															<PropertyList>
+																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>3</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="Player_Screw_Hit_RawMetal_2G" ID="{EAB23B74-198A-4190-841F-CE4611660A79}" ShortID="722046776">
+																	<PropertyList>
+																		<Property Name="Lowpass" Type="int16">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{0C89126A-D881-4B2D-B6D8-754CF1675F4A}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="25"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{DAD5CC24-1EDE-4083-8B39-A708E782063E}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="60"/>
+																							<Property Name="Min" Type="Real64" Value="-60"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{3C0ADD97-523A-404E-BF29-C762B8F5F116}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="3"/>
+																							<Property Name="Min" Type="Real64" Value="-5"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Player_Screw_Hit_RawMetal_01" ID="{EA506449-79BF-4A3D-A620-759E86CC9704}" ShortID="162396174">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_RawMetal_01" ID="{BFF8E2E2-DC06-4F3C-BB1D-151B684C13CF}" ShortID="671300343">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_RawMetal\Player_Screw_Hit_RawMetal_01.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="1045973519"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_RawMetal_01" ID="{BFF8E2E2-DC06-4F3C-BB1D-151B684C13CF}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_RawMetal_02" ID="{85293B4F-08DB-4198-A772-128DA99B6587}" ShortID="295958464">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_RawMetal_02" ID="{645E269E-642B-4D6E-B87D-098FFD2E3DB7}" ShortID="123373886">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_RawMetal\Player_Screw_Hit_RawMetal_02.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="386839786"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_RawMetal_02" ID="{645E269E-642B-4D6E-B87D-098FFD2E3DB7}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_RawMetal_03" ID="{EC083648-1C43-407A-8029-BAD1C758D35B}" ShortID="443096517">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_RawMetal_03" ID="{93E32B30-3DBB-45E8-AC23-C7FC02A64007}" ShortID="978907123">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_RawMetal\Player_Screw_Hit_RawMetal_03.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="217653966"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_RawMetal_03" ID="{93E32B30-3DBB-45E8-AC23-C7FC02A64007}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_RawMetal_04" ID="{E5A65403-0E40-493D-B964-4CA4F54D383B}" ShortID="960711447">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_RawMetal_04" ID="{FB5E91EA-C66D-4EEE-819E-64BF548C0447}" ShortID="327103642">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_RawMetal\Player_Screw_Hit_RawMetal_04.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="368436717"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_RawMetal_04" ID="{FB5E91EA-C66D-4EEE-819E-64BF548C0447}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Player_Screw_Hit_RawMetal_05" ID="{90D22360-5B69-4A74-8C28-A1D7FF79C48F}" ShortID="166353984">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Player_Screw_Hit_RawMetal_05" ID="{7EE1CA79-BC33-4DB8-A826-97022A3759F9}" ShortID="481748636">
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Screw_Hit_RawMetal\Player_Screw_Hit_RawMetal_05.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="544990696"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Player_Screw_Hit_RawMetal_05" ID="{7EE1CA79-BC33-4DB8-A826-97022A3759F9}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Player_Screw_Hit_Concrete_Blowtorch" ID="{2CE0D354-7C16-41FD-95F4-9DE43E008B01}" ShortID="802160373">
+																	<PropertyList>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{E713D963-2667-43DF-9913-31378882FD32}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="60"/>
+																							<Property Name="Min" Type="Real64" Value="-60"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-6</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Blowtorch_Hit_01" ID="{5E46E5E5-526B-462E-8CA8-70101521191C}" ShortID="836752120">
+																			<PropertyList>
+																				<Property Name="Highpass" Type="int16">
+																					<ValueList>
+																						<Value>34</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Blowtorch_Hit_01" ID="{CEB03378-9C04-4BBC-95AB-39ACA70FD080}" ShortID="924790604">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.888369931048392"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.23001506346825"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Blowtorch_Hit\Blowtorch_Hit_01.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="787222677"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Blowtorch_Hit_01" ID="{CEB03378-9C04-4BBC-95AB-39ACA70FD080}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Blowtorch_Hit_03" ID="{EC0748FD-E0AB-4C64-8F82-0845B90DEDDD}" ShortID="926535074">
+																			<PropertyList>
+																				<Property Name="Inclusion" Type="bool">
+																					<ValueList>
+																						<Value>False</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="Pitch" Type="int32">
+																					<ValueList>
+																						<Value>630</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>3</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Blowtorch_Hit_03" ID="{58E6AAC4-B470-42AF-B578-914F20648CBF}" ShortID="424249409">
+																					<Language>SFX</Language>
+																					<AudioFile>Blowtorch_Hit\Blowtorch_Hit_03.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="211479012"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Blowtorch_Hit_03" ID="{58E6AAC4-B470-42AF-B578-914F20648CBF}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Blowtorch_Hit_02" ID="{1104E9A7-33DA-4DB3-A205-C43C6E6A2BD5}" ShortID="183410480">
+																			<PropertyList>
+																				<Property Name="Highpass" Type="int16">
+																					<ValueList>
+																						<Value>29</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="Pitch" Type="int32">
+																					<ValueList>
+																						<Value>-300</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-8</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Blowtorch_Hit_02" ID="{2FFAB521-CD1E-45A2-8B4A-D3BE9DD92D1E}" ShortID="386688025">
+																					<PropertyList>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="1.08519319195663"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.10685539770778"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Blowtorch_Hit\Blowtorch_Hit_02.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="886606104"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Blowtorch_Hit_02" ID="{2FFAB521-CD1E-45A2-8B4A-D3BE9DD92D1E}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Player_Spring_Hit_01" ID="{F53F3898-4871-4DC1-BABA-110AA18BCD65}" ShortID="759712455">
+																	<PropertyList>
+																		<Property Name="Highpass" Type="int16">
+																			<ValueList>
+																				<Value>23</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="Pitch" Type="int32">
+																			<ValueList>
+																				<Value>130</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{B4B42BA4-7E09-4575-9FA1-2A4333395BD9}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="60"/>
+																							<Property Name="Min" Type="Real64" Value="-60"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-8</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Spring_HitGround" ID="{BE1BF027-7A97-4C4C-9962-E70B8E88EB85}" ShortID="825524618">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{0BC63E94-A054-4F45-A276-92B4989EFA0B}" ShortID="341213891">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.83694856571412"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="97960061"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{0BC63E94-A054-4F45-A276-92B4989EFA0B}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_01" ID="{A78DCCA0-00BA-41D5-A508-6487AB64A7C1}" ShortID="23541280">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{3FA73BA4-1320-410A-833D-FE3009B1C3FD}" ShortID="77934840">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="2.8298937363704"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="4.19105607447838"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="396319494"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{3FA73BA4-1320-410A-833D-FE3009B1C3FD}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_02" ID="{CC91C5FA-6F8E-4002-A91E-FC76E07C15F5}" ShortID="329381583">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{33FCEFA3-220B-4915-A5B0-0B270F7AC827}" ShortID="975102553">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="5.3205312060999"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="6.20590731660175"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="570119347"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{33FCEFA3-220B-4915-A5B0-0B270F7AC827}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_03" ID="{344E9967-444E-49C5-A6D2-B71F5ACF8ECF}" ShortID="709121889">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{DD8AE4F8-6584-4707-A40F-66BE72F407E3}" ShortID="496187266">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="9.44539093586786"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="10.1652761845937"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="1063539029"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{DD8AE4F8-6584-4707-A40F-66BE72F407E3}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Spring_HitGround_04" ID="{D71DDA65-084B-4D8E-8C40-8685735DAE1C}" ShortID="176772873">
+																			<PropertyList>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Spring_HitGround" ID="{476E2955-01EA-4A34-AD63-14B8E3923E26}" ShortID="722544878">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="4.13727154440113E-03"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.335118995096495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="12.1015192673734"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="12.8586399599988"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>Player_Spring_Hit\Spring_HitGround.wav</AudioFile>
+																					<ConvertedFileIDList>
+																						<File ID="729827641"/>
+																					</ConvertedFileIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Spring_HitGround" ID="{476E2955-01EA-4A34-AD63-14B8E3923E26}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+															</ChildrenList>
+														</BlendContainer>
+													</ChildrenList>
+													<GroupingInfo>
+														<GroupingBehaviorList>
+															<GroupingBehavior>
+																<ItemRef Name="Player_Screw_Hit_Concrete_3G" ID="{E4F63C2E-2691-4906-9B4E-453A01316224}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="Player_Screw_Hit_Wood_3G" ID="{622C028D-3281-4A46-B2D1-CDDCBADCED39}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="Player_Screw_Hit_RawMetal_3G" ID="{ECC1BADA-65A9-4B3C-9254-26E3FC82CB6D}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="Player_Screw_Hit_HollowMetal_3G" ID="{620A41FE-708F-45B9-BEE3-1778E161E013}"/>
+															</GroupingBehavior>
+														</GroupingBehaviorList>
+														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="HollowMetal" ID="{B48E1A4E-03C3-4621-AB8F-14EF9824A50A}"/>
+																<ItemList>
+																	<ItemRef Name="Player_Screw_Hit_HollowMetal_3G" ID="{620A41FE-708F-45B9-BEE3-1778E161E013}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Wood" ID="{E0FD219F-8FF2-4E39-90B4-582224534522}"/>
+																<ItemList>
+																	<ItemRef Name="Player_Screw_Hit_Wood_3G" ID="{622C028D-3281-4A46-B2D1-CDDCBADCED39}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Metal" ID="{A94EA2C4-51BE-4DE1-9AA0-035A3CE20838}"/>
+																<ItemList>
+																	<ItemRef Name="Player_Screw_Hit_RawMetal_3G" ID="{ECC1BADA-65A9-4B3C-9254-26E3FC82CB6D}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Concrete" ID="{289ADDCD-6C14-4411-8FDA-0B0545940D4F}"/>
+																<ItemList>
+																	<ItemRef Name="Player_Screw_Hit_Concrete_3G" ID="{E4F63C2E-2691-4906-9B4E-453A01316224}"/>
+																</ItemList>
+															</Grouping>
+														</GroupingList>
+													</GroupingInfo>
 												</SwitchContainer>
 												<SwitchContainer Name="TWO_GEARS" ID="{93B4538B-AF61-4356-BFE3-57EFA5A89E2A}" ShortID="347544998">
 													<ReferenceList>
@@ -4368,7 +6899,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_01.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="957401958"/>
+																						<File ID="341358308"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -4412,7 +6943,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_03.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="915608787"/>
+																						<File ID="335799531"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -4434,7 +6965,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_04.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="403089685"/>
+																						<File ID="238611567"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -4456,7 +6987,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_05.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="969511051"/>
+																						<File ID="206151139"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -4543,7 +7074,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_01.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="957401958"/>
+																						<File ID="341358308"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -4587,7 +7118,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_03.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="915608787"/>
+																						<File ID="335799531"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -4609,7 +7140,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_04.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="403089685"/>
+																						<File ID="238611567"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -4631,7 +7162,7 @@
 																					<Language>SFX</Language>
 																					<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_05.wav</AudioFile>
 																					<ConvertedFileIDList>
-																						<File ID="969511051"/>
+																						<File ID="206151139"/>
 																					</ConvertedFileIDList>
 																				</AudioFileSource>
 																			</ChildrenList>
@@ -5233,9 +7764,14 @@
 																</RandomSequenceContainer>
 																<RandomSequenceContainer Name="Player_Spring_Hit" ID="{9DCBFA4B-E0A8-4D39-97F3-639378487F4E}" ShortID="107338924">
 																	<PropertyList>
+																		<Property Name="Highpass" Type="int16">
+																			<ValueList>
+																				<Value>23</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="Pitch" Type="int32">
 																			<ValueList>
-																				<Value>620</Value>
+																				<Value>880</Value>
 																			</ValueList>
 																			<ModifierList>
 																				<ModifierInfo>
@@ -5913,6 +8449,11 @@
 																</RandomSequenceContainer>
 																<RandomSequenceContainer Name="Player_Spring_Hit" ID="{05220F59-95E7-4F6D-96CF-CF033D1800C3}" ShortID="1052473223">
 																	<PropertyList>
+																		<Property Name="Highpass" Type="int16">
+																			<ValueList>
+																				<Value>12</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="Pitch" Type="int32">
 																			<ValueList>
 																				<Value>780</Value>
@@ -6234,6 +8775,9 @@
 																		<AudioFileSource Name="Player_Screw_Hit_Concrete_01" ID="{A3B9F8F3-EBA9-483D-AB55-38D872D1FF6A}" ShortID="957401958">
 																			<Language>SFX</Language>
 																			<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_01.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="341358308"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -6272,6 +8816,9 @@
 																		<AudioFileSource Name="Player_Screw_Hit_Concrete_03" ID="{0C840CFD-A24F-44C4-AF58-E545F2E32299}" ShortID="915608787">
 																			<Language>SFX</Language>
 																			<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_03.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="335799531"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -6291,6 +8838,9 @@
 																		<AudioFileSource Name="Player_Screw_Hit_Concrete_04" ID="{1D72C169-32DC-4397-BCA0-85DB82F02D30}" ShortID="403089685">
 																			<Language>SFX</Language>
 																			<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_04.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="238611567"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -6310,6 +8860,9 @@
 																		<AudioFileSource Name="Player_Screw_Hit_Concrete_05" ID="{7FF8DC4B-5C87-4B76-97B7-61736A64E310}" ShortID="969511051">
 																			<Language>SFX</Language>
 																			<AudioFile>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_05.wav</AudioFile>
+																			<ConvertedFileIDList>
+																				<File ID="206151139"/>
+																			</ConvertedFileIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
@@ -6792,17 +9345,8 @@
 													<GroupingBehavior>
 														<ItemRef Name="TWO_GEARS" ID="{93B4538B-AF61-4356-BFE3-57EFA5A89E2A}"/>
 													</GroupingBehavior>
-													<GroupingBehavior>
-														<ItemRef Name="FOUR_GEARS" ID="{A7FA38B8-1456-4E94-802B-A24F3D80E357}"/>
-													</GroupingBehavior>
 												</GroupingBehaviorList>
 												<GroupingList>
-													<Grouping>
-														<SwitchRef Name="Four" ID="{D8661117-ADD3-41C6-80FF-AAF7493A4E97}"/>
-														<ItemList>
-															<ItemRef Name="FOUR_GEARS" ID="{A7FA38B8-1456-4E94-802B-A24F3D80E357}"/>
-														</ItemList>
-													</Grouping>
 													<Grouping>
 														<SwitchRef Name="One" ID="{D1080395-CC81-4043-8904-5925E5E963C3}"/>
 														<ItemList>
@@ -8007,6 +10551,404 @@
 								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="MENU" ID="{8AF6B5BE-2050-4E0C-AEDE-E2BF5773D582}" ShortID="504807576">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="FB" ID="{C3D074FB-45E1-4C3D-9552-3EF37C103693}" ShortID="849544600">
+							<PropertyList>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Att_Medium" ID="{79E9E340-B7FB-4F30-8182-EB3EBA579CED}" WorkUnitID="{6BAC450B-DF25-494E-9313-05A28BAF4893}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="FB_Updates" ID="{921790F2-DDC2-4921-83AB-247AB56DD4BD}" ShortID="812354791">
+									<PropertyList>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Att_Medium" ID="{79E9E340-B7FB-4F30-8182-EB3EBA579CED}" WorkUnitID="{6BAC450B-DF25-494E-9313-05A28BAF4893}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FB_Updates" ID="{F5A8564D-37DE-4ABD-8C0E-0EF1C07713A9}" ShortID="502698215">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{70AB017E-123D-4A9E-9417-B31B45FC919B}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FB_Updates" ID="{623AF1BA-6D12-4D74-802A-6B22070FAB57}" ShortID="870583727">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.116182828906733"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="5.16368128474367E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.72384187770228"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FB\FB_Updates.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FB_Updates" ID="{623AF1BA-6D12-4D74-802A-6B22070FAB57}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FB_Updates_01" ID="{FEF3E424-0612-4D45-9763-DBB66C3B81BF}" ShortID="659148631">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FB_Updates" ID="{FA83F2BA-35FF-4059-9B26-931C18B8EA3D}" ShortID="926002060">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.116182828906733"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="5.16368128474367E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.45015873015873"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.098127591988"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FB\FB_Updates.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FB_Updates" ID="{FA83F2BA-35FF-4059-9B26-931C18B8EA3D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FB_Updates_02" ID="{DCA5CEE7-A6CC-41CC-AD7E-214D6EA75002}" ShortID="992817967">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FB_Updates" ID="{B17573C2-7928-49C4-90FD-697BE4A50B93}" ShortID="164957286">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.116182828906733"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="5.16368128474367E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="8.4263492063492"/>
+														<Property Name="TrimEnd" Type="Real64" Value="13.4060640999245"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FB\FB_Updates.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FB_Updates" ID="{B17573C2-7928-49C4-90FD-697BE4A50B93}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FB_Updates_03" ID="{E5E8B4A4-D410-4D75-B7DC-6847D18E45D2}" ShortID="550282026">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FB_Updates" ID="{E52BB034-0D35-41A6-96E3-2A1B3D037C12}" ShortID="89195244">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.116182828906733"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="5.16368128474367E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="12.4736507936508"/>
+														<Property Name="TrimEnd" Type="Real64" Value="20.638127591988"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FB\FB_Updates.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FB_Updates" ID="{E52BB034-0D35-41A6-96E3-2A1B3D037C12}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FB_Updates_04" ID="{D32920FA-D808-40AB-A00B-B1BFF8504B97}" ShortID="471965223">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FB_Updates" ID="{5B1DFB55-FBF4-4787-A4FA-D8CAEF9A76FC}" ShortID="15998756">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.116182828906733"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="5.16368128474367E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="21.4971428571429"/>
+														<Property Name="TrimEnd" Type="Real64" Value="30.9886037824642"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FB\FB_Updates.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FB_Updates" ID="{5B1DFB55-FBF4-4787-A4FA-D8CAEF9A76FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FB_Updates_05" ID="{053F2FA4-5F32-415B-AD9A-D9D2DBE098C5}" ShortID="605902932">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FB_Updates" ID="{3FCB9887-4662-4270-BC50-89CBA0B72E08}" ShortID="471069123">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.116182828906733"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="5.16368128474367E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="31.184126984127"/>
+														<Property Name="TrimEnd" Type="Real64" Value="36.5619371157975"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FB\FB_Updates.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FB_Updates" ID="{3FCB9887-4662-4270-BC50-89CBA0B72E08}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FB_Updates_06" ID="{BE8DCF54-8127-4969-A484-826B55485814}" ShortID="508153648">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FB_Updates" ID="{A7DC839D-FCFC-489A-8C9D-08BDD8C6BA11}" ShortID="614925013">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.116182828906733"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="5.16368128474367E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="36.4920634920635"/>
+														<Property Name="TrimEnd" Type="Real64" Value="41.5346031746032"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>FB\FB_Updates.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FB_Updates" ID="{A7DC839D-FCFC-489A-8C9D-08BDD8C6BA11}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="UI" ID="{BC2ABF41-34A3-4969-A47F-03A3D79E8153}" ShortID="1072107853">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Menu_Clic" ID="{6E7BBA49-2CFE-42A0-AD02-320241DDA8CC}" ShortID="1028202001">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="POSITIF" ID="{F8DF5B7D-145D-4EF2-9F3D-CC86AD4CE42C}" ShortID="118219743">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POSITIF" ID="{BCB7E99F-1C63-4CEB-B5B1-4F6CE2285C83}" ShortID="747552381">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.194976190476191"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.251200887369874"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>POSITIF.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POSITIF" ID="{BCB7E99F-1C63-4CEB-B5B1-4F6CE2285C83}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="POSITIF 2" ID="{EE95614A-32F1-4B51-ADF5-39FD65E65546}" ShortID="1042537306">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="POSITIF 2" ID="{DD7EED18-8569-467C-9B9F-328B8F09EAE0}" ShortID="215731714">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="3.98730158730158E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="5.78928884986831E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.207854285993005"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>POSITIF 2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="POSITIF 2" ID="{DD7EED18-8569-467C-9B9F-328B8F09EAE0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<BlendContainer Name="Menu_MouseOn" ID="{BD6A6A96-B153-4205-93EF-6DBED3AC3A11}" ShortID="366815538">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="NORMAL" ID="{DA996850-5C4A-4A20-BED4-085D13F49ADA}" ShortID="937474639">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="NORMAL" ID="{1E5848B8-8E43-4784-BFA0-BB76772856FC}" ShortID="268505114">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.73309920983319E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.96136962247586E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.042089552238806"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.257489025460929"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>NORMAL.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="NORMAL" ID="{1E5848B8-8E43-4784-BFA0-BB76772856FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="Menu_Back" ID="{672A00ED-FFEF-43F5-9E5B-220443380BF4}" ShortID="214105666">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BACK" ID="{F99CE389-0D65-43E9-ADFE-9E201D889144}" ShortID="295982152">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BACK" ID="{A3CB4E85-C37F-47C0-BAA7-18B6CE8AE616}" ShortID="736862746">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.06496927129061E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.136804214223003"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.108410886742757"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.345882352941176"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>BACK.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BACK" ID="{A3CB4E85-C37F-47C0-BAA7-18B6CE8AE616}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
