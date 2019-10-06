@@ -63,7 +63,9 @@
 							<ChildrenList>
 								<BlendContainer Name="Player_JumpSpring" ID="{55BED6E7-69B2-4C5A-955E-C50030945F05}" ShortID="50421001">
 									<PropertyList>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -510,6 +512,8 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{BB1503E6-CD6B-4976-AD95-755881991A33}" ShortID="905326497">

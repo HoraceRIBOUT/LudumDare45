@@ -54,7 +54,7 @@
 				</File>
 				<File Id="51178059" Language="SFX">
 					<ShortName>Player_WindFalling\Player_WindFalling_Big.wav</ShortName>
-					<Path>SFX\Player_WindFalling\Player_WindFalling_Big_99BB2A4B.wem</Path>
+					<Path>SFX\Player_WindFalling\Player_WindFalling_Big_467ACEF0.wem</Path>
 				</File>
 				<File Id="79346098" Language="SFX">
 					<ShortName>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_04.wav</ShortName>
@@ -194,7 +194,7 @@
 				</File>
 				<File Id="456399260" Language="SFX">
 					<ShortName>Tools, Shovel, Metal, Hit Concrete Floor 2 SND29267.wav</ShortName>
-					<Path>SFX\Tools, Shovel, Metal, Hit Concrete Floor 2 SND29267_80AAE8D3.wem</Path>
+					<Path>SFX\Tools, Shovel, Metal, Hit Concrete Floor 2 SND29267_0D9678A8.wem</Path>
 				</File>
 				<File Id="474099346" Language="SFX">
 					<ShortName>Rat's life.wav</ShortName>
@@ -202,7 +202,7 @@
 				</File>
 				<File Id="488360678" Language="SFX">
 					<ShortName>Tools, Shovel, Metal, Hit Concrete Floor 1 SND29268.wav</ShortName>
-					<Path>SFX\Tools, Shovel, Metal, Hit Concrete Floor 1 SND29268_8515433A.wem</Path>
+					<Path>SFX\Tools, Shovel, Metal, Hit Concrete Floor 1 SND29268_B28E7C14.wem</Path>
 				</File>
 				<File Id="498095128" Language="SFX">
 					<ShortName>Big Rat.wav</ShortName>
@@ -254,7 +254,7 @@
 				</File>
 				<File Id="656458444" Language="SFX">
 					<ShortName>Tools, Shovel, Metal, Hit Concrete Floor 3 SND29266.wav</ShortName>
-					<Path>SFX\Tools, Shovel, Metal, Hit Concrete Floor 3 SND29266_F98047C7.wem</Path>
+					<Path>SFX\Tools, Shovel, Metal, Hit Concrete Floor 3 SND29266_983E70D8.wem</Path>
 				</File>
 				<File Id="669684783" Language="SFX">
 					<ShortName>Big Rat.wav</ShortName>
@@ -298,7 +298,7 @@
 				</File>
 				<File Id="749879289" Language="SFX">
 					<ShortName>Player_WindFalling\Player_WindFalling_Medium.wav</ShortName>
-					<Path>SFX\Player_WindFalling\Player_WindFalling_Medium_E16C75F6.wem</Path>
+					<Path>SFX\Player_WindFalling\Player_WindFalling_Medium_97E2A94D.wem</Path>
 				</File>
 				<File Id="777306862" Language="SFX">
 					<ShortName>Little Rat 2.wav</ShortName>
@@ -362,7 +362,7 @@
 				</File>
 				<File Id="1005622967" Language="SFX">
 					<ShortName>Player_WindFalling\Player_WindFalling_Light.wav</ShortName>
-					<Path>SFX\Player_WindFalling\Player_WindFalling_Light_12F07675.wem</Path>
+					<Path>SFX\Player_WindFalling\Player_WindFalling_Light_BCE0C314.wem</Path>
 				</File>
 				<File Id="1039105264" Language="SFX">
 					<ShortName>Big Rat.wav</ShortName>
@@ -374,7 +374,7 @@
 				</File>
 				<File Id="1054674497" Language="SFX">
 					<ShortName>Player_WindFalling\Player_WindFalling_High.wav</ShortName>
-					<Path>SFX\Player_WindFalling\Player_WindFalling_High_7CACE039.wem</Path>
+					<Path>SFX\Player_WindFalling\Player_WindFalling_High_811FB1C4.wem</Path>
 				</File>
 				<File Id="1067185360" Language="SFX">
 					<ShortName>Little Rat 2.wav</ShortName>
