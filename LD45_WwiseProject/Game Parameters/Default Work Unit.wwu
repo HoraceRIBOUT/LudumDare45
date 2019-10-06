@@ -16,6 +16,7 @@
 						<Property Name="Min" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="FallSpeed" ID="{E7BB189F-ADD9-4EC2-99B0-8283B40735B9}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
