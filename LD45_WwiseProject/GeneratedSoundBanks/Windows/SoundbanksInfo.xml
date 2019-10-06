@@ -26,7 +26,6 @@
 				<Event Id="1068347553" Name="Music_Test" ObjectPath="\Events\Default Work Unit\Music_Test"/>
 				<Event Id="1205858677" Name="Object_Ambiant_Workshop_Fridge_01" ObjectPath="\Events\Default Work Unit\Object_Ambiant_Workshop_Fridge_01"/>
 				<Event Id="1746703344" Name="Object_Ambiant_Workshop_Rat_Hole" ObjectPath="\Events\Default Work Unit\Object_Ambiant_Workshop_Rat_Hole"/>
-				<Event Id="2529854466" Name="Player_JumpSpring" ObjectPath="\Events\Default Work Unit\Player_JumpSpring"/>
 				<Event Id="998660920" Name="Player_WindFalling" ObjectPath="\Events\Default Work Unit\Player_WindFalling"/>
 				<Event Id="3252105840" Name="Screw_Hit_Gears" ObjectPath="\Events\Default Work Unit\Screw_Hit_Gears"/>
 				<Event Id="337504512" Name="Screw_Movement_Gears" ObjectPath="\Events\Default Work Unit\Screw_Movement_Gears"/>
@@ -64,6 +63,10 @@
 					<ShortName>Rat's life.wav</ShortName>
 					<Path>SFX\Rat's life_B050B319.wem</Path>
 				</File>
+				<File Id="97960061" Language="SFX">
+					<ShortName>Player_Spring_Hit\Spring_HitGround.wav</ShortName>
+					<Path>SFX\Player_Spring_Hit\Spring_HitGround_5C3343FE.wem</Path>
+				</File>
 				<File Id="102572542" Language="SFX">
 					<ShortName>Amb_Workshop_UnderTable_Lp.wav</ShortName>
 					<Path>SFX\Amb_Workshop_UnderTable_Lp_9B96ECC7.wem</Path>
@@ -75,6 +78,10 @@
 				<File Id="114079171" Language="SFX">
 					<ShortName>AWCK ADD Metal Sweetener Large 02.wav</ShortName>
 					<Path>SFX\AWCK ADD Metal Sweetener Large 02_F1F942AB.wem</Path>
+				</File>
+				<File Id="146607084" Language="SFX">
+					<ShortName>Player_Spring_Hit\Spring_HitGround.wav</ShortName>
+					<Path>SFX\Player_Spring_Hit\Spring_HitGround_AB395002.wem</Path>
 				</File>
 				<File Id="149946540" Language="SFX">
 					<ShortName>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_02.wav</ShortName>
@@ -160,6 +167,10 @@
 					<ShortName>Player_Screw_Hit_RawMetal\Player_Screw_Hit_RawMetal_02.wav</ShortName>
 					<Path>SFX\Player_Screw_Hit_RawMetal\Player_Screw_Hit_RawMetal_02_6296B0F9.wem</Path>
 				</File>
+				<File Id="396319494" Language="SFX">
+					<ShortName>Player_Spring_Hit\Spring_HitGround.wav</ShortName>
+					<Path>SFX\Player_Spring_Hit\Spring_HitGround_6B26D966.wem</Path>
+				</File>
 				<File Id="403089685" Language="SFX">
 					<ShortName>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_04.wav</ShortName>
 					<Path>SFX\Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_04_6296B0F9.wem</Path>
@@ -191,6 +202,10 @@
 				<File Id="446696013" Language="SFX">
 					<ShortName>AWCK ADD Metal Sweetener Large 02.wav</ShortName>
 					<Path>SFX\AWCK ADD Metal Sweetener Large 02_60FB7283.wem</Path>
+				</File>
+				<File Id="451727750" Language="SFX">
+					<ShortName>Player_Spring_Hit\Spring_HitGround.wav</ShortName>
+					<Path>SFX\Player_Spring_Hit\Spring_HitGround_75D2BDAC.wem</Path>
 				</File>
 				<File Id="456399260" Language="SFX">
 					<ShortName>Tools, Shovel, Metal, Hit Concrete Floor 2 SND29267.wav</ShortName>
@@ -239,6 +254,10 @@
 				<File Id="598344507" Language="SFX">
 					<ShortName>Amb_Workshop_Low_Lp.wav</ShortName>
 					<Path>SFX\Amb_Workshop_Low_Lp_9B96ECC7.wem</Path>
+				</File>
+				<File Id="613195067" Language="SFX">
+					<ShortName>Player_Blowtorch_01.wav</ShortName>
+					<Path>SFX\Player_Blowtorch_01_6296B0F9.wem</Path>
 				</File>
 				<File Id="621077961" Language="SFX">
 					<ShortName>AWCK ADD Bullet Impact Metal.wav</ShortName>
@@ -300,9 +319,17 @@
 					<ShortName>Player_WindFalling\Player_WindFalling_Medium.wav</ShortName>
 					<Path>SFX\Player_WindFalling\Player_WindFalling_Medium_97E2A94D.wem</Path>
 				</File>
+				<File Id="771183851" Language="SFX">
+					<ShortName>Player_Blowtorch_03.wav</ShortName>
+					<Path>SFX\Player_Blowtorch_03_6296B0F9.wem</Path>
+				</File>
 				<File Id="777306862" Language="SFX">
 					<ShortName>Little Rat 2.wav</ShortName>
 					<Path>SFX\Little Rat 2_9DDE9E85.wem</Path>
+				</File>
+				<File Id="780814146" Language="SFX">
+					<ShortName>Player_Spring_Hit\Spring_HitGround.wav</ShortName>
+					<Path>SFX\Player_Spring_Hit\Spring_HitGround_1D50CBDC.wem</Path>
 				</File>
 				<File Id="785765689" Language="SFX">
 					<ShortName>Player_Screw_Hit_Wood\Player_Screw_Hit_Wood_05.wav</ShortName>
@@ -355,6 +382,10 @@
 				<File Id="969511051" Language="SFX">
 					<ShortName>Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_05.wav</ShortName>
 					<Path>SFX\Player_Screw_Hit_Concrete\Player_Screw_Hit_Concrete_05_6296B0F9.wem</Path>
+				</File>
+				<File Id="969898955" Language="SFX">
+					<ShortName>Player_Blowtorch_02.wav</ShortName>
+					<Path>SFX\Player_Blowtorch_02_6296B0F9.wem</Path>
 				</File>
 				<File Id="987839474" Language="SFX">
 					<ShortName>AWCK ADD Bullet Impact Metal.wav</ShortName>
