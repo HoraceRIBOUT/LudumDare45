@@ -10,7 +10,24 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="AMBIANT" ID="{5E7B647F-F3CF-4ECB-ABC0-5006359071C4}"/>
+						<Bus Name="AMBIANT" ID="{5E7B647F-F3CF-4ECB-ABC0-5006359071C4}">
+							<ChildrenList>
+								<Bus Name="Amb_2D" ID="{A42CB514-412F-4C26-AF0A-A3C25EFB9CBA}">
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Amb_3D" ID="{5AED36EF-A1EE-4433-902C-81405861BD6F}"/>
+											<DuckingParam>
+												<Volume>-6</Volume>
+												<FadeInTime>1</FadeInTime>
+												<FadeOutTime>1</FadeOutTime>
+												<FadeCurve>FadeLinear</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+								<Bus Name="Amb_3D" ID="{5AED36EF-A1EE-4433-902C-81405861BD6F}"/>
+							</ChildrenList>
+						</Bus>
 						<Bus Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}"/>
 						<Bus Name="MUSIC" ID="{7D72BC3D-68C6-4A88-8772-F925469EE50F}"/>
 						<Bus Name="REVERBS" ID="{50F73A55-EE7C-4B07-83E2-552A306CFB39}">

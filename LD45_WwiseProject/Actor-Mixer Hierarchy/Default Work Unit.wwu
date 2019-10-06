@@ -53,8 +53,182 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Player_JumpSpring" ID="{55BED6E7-69B2-4C5A-955E-C50030945F05}" ShortID="50421001">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Spring" ID="{837717BE-7616-4975-8C5D-CA07F4FA01A4}" ShortID="514522151">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Player_JumpSping_01" ID="{C91BE610-4B35-4C53-BBD1-75A3E2EA8194}" ShortID="206703280">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Player_JumpSping_01" ID="{F17C00A1-86ED-4A47-AC83-2B3F6B80DBD9}" ShortID="38578571">
+															<Language>SFX</Language>
+															<AudioFile>Player_JumpSping_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Player_JumpSping_01" ID="{F17C00A1-86ED-4A47-AC83-2B3F6B80DBD9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Player_JumpSping_02" ID="{209A13CE-96E5-44A4-A0C2-2489706A2802}" ShortID="181706559">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Player_JumpSping_02" ID="{E8BB5DB6-6DD5-4411-A23D-A2618482BFC3}" ShortID="412372338">
+															<Language>SFX</Language>
+															<AudioFile>Player_JumpSping_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Player_JumpSping_02" ID="{E8BB5DB6-6DD5-4411-A23D-A2618482BFC3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Player_JumpSping_03" ID="{EBD46B71-F63B-485B-9AAB-EBB53C47291F}" ShortID="218098359">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Player_JumpSping_03" ID="{75172ABF-3189-44E8-A7AF-E271DE5907F8}" ShortID="674275159">
+															<Language>SFX</Language>
+															<AudioFile>Player_JumpSping_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Player_JumpSping_03" ID="{75172ABF-3189-44E8-A7AF-E271DE5907F8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Player_JumpSping_04" ID="{420DC53B-F66F-4305-BB81-7DC9D1FBEEFB}" ShortID="546981404">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Player_JumpSping_04" ID="{E384C16E-A929-4909-8D8F-AE7C0CD9CE70}" ShortID="906161043">
+															<Language>SFX</Language>
+															<AudioFile>Player_JumpSping_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Player_JumpSping_04" ID="{E384C16E-A929-4909-8D8F-AE7C0CD9CE70}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="P_Foley" ID="{4ED68DFF-E381-4E61-96C9-05812CD67AD2}" ShortID="224273076">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{E1BC794E-C8F0-40DE-B58A-7D57CA98E52E}" ShortID="965696144">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Speed" ID="{DF16E620-3E08-4BFF-8576-D64A4C8906FE}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{F19C37FD-3668-40BF-B92F-80E4915DA174}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>32</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0.32643</XPos>
+														<YPos>6</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{BB1503E6-CD6B-4976-AD95-755881991A33}" ShortID="905326497">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Speed" ID="{DF16E620-3E08-4BFF-8576-D64A4C8906FE}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{E8783D75-42E6-4003-99DE-7181362096D8}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0.2318</XPos>
+														<YPos>-2.8069</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
@@ -64,70 +238,12 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Screw_Movement" ID="{59AB4C63-9E81-4EFA-9652-BD34885D928C}" ShortID="511979800">
+								<BlendContainer Name="Screw_Materials" ID="{5DC5EF2C-2689-49AE-A388-23EA5F79A13C}" ShortID="873323144">
 									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<RTPCList>
-												<RTPC Name="" ID="{BE8FD8A1-27CE-4C3B-80F6-70002EB4331F}" ShortID="131784993">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Speed" ID="{DF16E620-3E08-4BFF-8576-D64A4C8906FE}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{B187E6B8-E716-4187-BB75-DBB3A09AB1F3}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-240</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>120</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<RTPCList>
-												<RTPC Name="" ID="{1C702B51-8187-44B6-B04E-D4E99A7E22C7}" ShortID="253410794">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Speed" ID="{DF16E620-3E08-4BFF-8576-D64A4C8906FE}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{696F2415-D884-49F5-BC4B-6DA3DD0866AF}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-200</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Log2</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>0.43789</XPos>
-																<YPos>-1.66674</YPos>
-																<Flags>0</Flags>
-																<SegmentShape>Exp2</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -139,15 +255,922 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Metal Cart, Roll, Light SND8204" ID="{0EBECAB5-94F4-43C8-B6A6-E269A855F579}" ShortID="1057227399">
-											<Language>SFX</Language>
-											<AudioFile>Metal Cart, Roll, Light SND8204.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="Screw_Moves_Concrete_Lp" ID="{3C3CA04E-8EAB-4D1F-9D78-AC01C9B756D4}" ShortID="81180308">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Screw_Moves_Concrete_Lp" ID="{A5B475D5-B178-493D-91AC-02628860448C}" ShortID="148994146">
+													<Language>SFX</Language>
+													<AudioFile>SCREW\Screw_Moves_Concrete_Lp.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Screw_Moves_Concrete_Lp" ID="{A5B475D5-B178-493D-91AC-02628860448C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Screw_Moves_HollowMetal_Lp" ID="{43C4B044-1DA1-454C-B663-9D7B2A61DAD3}" ShortID="463412139">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Screw_Moves_HollowMetal_Lp" ID="{A978A698-5227-4326-9F0C-37D87035D0C1}" ShortID="817418780">
+													<Language>SFX</Language>
+													<AudioFile>SCREW\Screw_Moves_HollowMetal_Lp.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Screw_Moves_HollowMetal_Lp" ID="{A978A698-5227-4326-9F0C-37D87035D0C1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Screw_Moves_RawMetal_Lp_V2" ID="{44C85F87-2AE0-4210-ACAC-8EDCA14E2F7A}" ShortID="257787982">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-380</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Screw_Moves_RawMetal_Lp_V2" ID="{A2ACF084-2ED7-40EC-AA9A-EC4BC2285AE3}" ShortID="444684901">
+													<Language>SFX</Language>
+													<AudioFile>SCREW\Screw_Moves_RawMetal_Lp_V2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Screw_Moves_RawMetal_Lp_V2" ID="{A2ACF084-2ED7-40EC-AA9A-EC4BC2285AE3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Screw_Moves_Wood_Lp" ID="{F411ED98-FE10-4AFF-94C0-7F864B7ABE34}" ShortID="401074154">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Screw_Moves_Wood_Lp" ID="{99517AA1-14A5-4E24-8964-3B86CA5240B5}" ShortID="344697289">
+													<Language>SFX</Language>
+													<AudioFile>SCREW\Screw_Moves_Wood_Lp.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Screw_Moves_Wood_Lp" ID="{99517AA1-14A5-4E24-8964-3B86CA5240B5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Screw_Movement" ID="{59AB4C63-9E81-4EFA-9652-BD34885D928C}" ShortID="511979800">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{BE8FD8A1-27CE-4C3B-80F6-70002EB4331F}" ShortID="131784993">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Speed" ID="{DF16E620-3E08-4BFF-8576-D64A4C8906FE}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{B187E6B8-E716-4187-BB75-DBB3A09AB1F3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-240</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>120</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{1C702B51-8187-44B6-B04E-D4E99A7E22C7}" ShortID="253410794">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Speed" ID="{DF16E620-3E08-4BFF-8576-D64A4C8906FE}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{696F2415-D884-49F5-BC4B-6DA3DD0866AF}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0.43789</XPos>
+																		<YPos>-1.66674</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Metal Cart, Roll, Light SND8204" ID="{0EBECAB5-94F4-43C8-B6A6-E269A855F579}" ShortID="1057227399">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.636943818200535"/>
+														<Property Name="TrimEnd" Type="Real64" Value="11.2908602017706"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Metal Cart, Roll, Light SND8204.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Metal Cart, Roll, Light SND8204" ID="{0EBECAB5-94F4-43C8-B6A6-E269A855F579}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Metal Cart, Roll, Light SND8204" ID="{0EBECAB5-94F4-43C8-B6A6-E269A855F579}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+									<BlendTrackList>
+										<BlendTrack Name="SURFACES" ID="{8D86C1F3-23A4-4049-9A23-49EBD1C43E9C}" ShortID="508986777">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{DEEA1A02-273A-4A36-B1CB-3E58A8A07CFD}" ShortID="454040012">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Surfaces" ID="{56BAF697-62B8-4283-A0AD-D495C2C62B3A}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{1C4CA3C7-9A8B-4035-AAA2-B03A6BCD196A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>40</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Surfaces" ID="{56BAF697-62B8-4283-A0AD-D495C2C62B3A}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="Screw_Moves_RawMetal_Lp_V2" ID="{44C85F87-2AE0-4210-ACAC-8EDCA14E2F7A}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>15.0079745762712</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="Screw_Moves_Concrete_Lp" ID="{3C3CA04E-8EAB-4D1F-9D78-AC01C9B756D4}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>4.99641460234681</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>25.0254237288136</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="Screw_Moves_HollowMetal_Lp" ID="{43C4B044-1DA1-454C-B663-9D7B2A61DAD3}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>15.0079745762712</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>35.0037372881356</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="Screw_Moves_Wood_Lp" ID="{F411ED98-FE10-4AFF-94C0-7F864B7ABE34}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>25.0254237288136</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>40</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<SwitchContainer Name="Screw_Gears" ID="{FA21B00E-080A-4633-8E4D-1A6DE83C3185}" ShortID="119997403">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Zero" ID="{C63079CB-675D-47AB-91D5-DF70E9EDB3B0}" WorkUnitID="{C8FBA1BA-9FAE-4718-BDD4-94727EE8F663}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="NumberOfGears" ID="{ECB3721A-2461-46B9-A18E-F2AD3ED20CC4}" WorkUnitID="{C8FBA1BA-9FAE-4718-BDD4-94727EE8F663}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="SCREW_ZERO" ID="{CA78AFBB-4994-4B82-9C58-F58E1FDE4A72}" ShortID="334129193">
+											<PropertyList>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{6AF57167-117A-47D0-94DC-14F8B2CFD83F}" ShortID="473029064">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Speed" ID="{DF16E620-3E08-4BFF-8576-D64A4C8906FE}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{A34B63FA-068E-4104-A67D-E440C097C15D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Concrete" ID="{289ADDCD-6C14-4411-8FDA-0B0545940D4F}" WorkUnitID="{C8FBA1BA-9FAE-4718-BDD4-94727EE8F663}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Material" ID="{ADD8B225-932A-4161-A26C-4AB90CE9A941}" WorkUnitID="{C8FBA1BA-9FAE-4718-BDD4-94727EE8F663}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Screw_Move_HollowMetal_High_Lp" ID="{D10AE1C9-E064-4732-8B67-85A597480412}" ShortID="665482840">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Screw_Move_HollowMetal_High_Lp" ID="{7B582DAC-5DE0-4DD7-9268-E218F4482E4A}" ShortID="956085264">
+															<Language>SFX</Language>
+															<AudioFile>SCREW\Screw_Move_HollowMetal_High_Lp.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Screw_Move_HollowMetal_High_Lp" ID="{7B582DAC-5DE0-4DD7-9268-E218F4482E4A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Screw_Moves_Concrete_Lp" ID="{E3A05E53-094C-4BCC-B4DB-72EB259DCC26}" ShortID="771247951">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Screw_Moves_Concrete_Lp" ID="{214FBD5F-FBEC-4BDD-B366-78BDDD8599F3}" ShortID="992832767">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="69.5542726046483"/>
+																<Property Name="LoopBegin" Type="Real64" Value="4.37934308992281E-02"/>
+																<Property Name="LoopEnd" Type="Real64" Value="4.13590313580652"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SCREW\Screw_Moves_Concrete_Lp.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="309461809"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Screw_Moves_Concrete_Lp" ID="{214FBD5F-FBEC-4BDD-B366-78BDDD8599F3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Screw_Moves_HollowMetal_Lp" ID="{8D2645F7-F5C4-4863-B945-E9C2F1F2D754}" ShortID="726528469">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Screw_Moves_HollowMetal_Lp" ID="{9E74D055-3386-4B47-8C75-DDCF726FA1D0}" ShortID="113496575">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="69.7846855439703"/>
+																<Property Name="LoopBegin" Type="Real64" Value="3.92538856184846E-02"/>
+																<Property Name="LoopEnd" Type="Real64" Value="7.02644552570874"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SCREW\Screw_Moves_HollowMetal_Lp.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="198411007"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Screw_Moves_HollowMetal_Lp" ID="{9E74D055-3386-4B47-8C75-DDCF726FA1D0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Screw_Moves_RawMetal_Lp_V2" ID="{A67741AB-7F58-41CA-9877-3E1AD670F716}" ShortID="831355728">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-380</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Screw_Moves_RawMetal_Lp_V2" ID="{1B2F1AFB-A7ED-4873-B721-B1F5D38408F2}" ShortID="157029568">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="87.2308569299651"/>
+																<Property Name="LoopBegin" Type="Real64" Value="4.79769713114811E-02"/>
+																<Property Name="LoopEnd" Type="Real64" Value="7.01772244001574"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SCREW\Screw_Moves_RawMetal_Lp_V2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Screw_Moves_RawMetal_Lp_V2" ID="{1B2F1AFB-A7ED-4873-B721-B1F5D38408F2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Screw_Moves_Wood_Lp" ID="{3ED1737B-6A60-4508-A779-E12405747336}" ShortID="269251120">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Screw_Moves_Wood_Lp" ID="{09074D33-C13E-4A15-A7B4-A5445BAD0026}" ShortID="169863240">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="324.447189623224"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.355923409512044"/>
+																<Property Name="LoopEnd" Type="Real64" Value="3.66940086473132"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SCREW\Screw_Moves_Wood_Lp.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Screw_Moves_Wood_Lp" ID="{09074D33-C13E-4A15-A7B4-A5445BAD0026}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Screw_Moves_Concrete_Lp" ID="{E3A05E53-094C-4BCC-B4DB-72EB259DCC26}"/>
+														<PropertyList>
+															<Property Name="FadeInTime" Type="Real64">
+																<ValueList>
+																	<Value>0.5</Value>
+																</ValueList>
+															</Property>
+															<Property Name="FadeOutTime" Type="Real64">
+																<ValueList>
+																	<Value>0.5</Value>
+																</ValueList>
+															</Property>
+														</PropertyList>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Screw_Moves_Wood_Lp" ID="{3ED1737B-6A60-4508-A779-E12405747336}"/>
+														<PropertyList>
+															<Property Name="FadeInTime" Type="Real64">
+																<ValueList>
+																	<Value>0.5</Value>
+																</ValueList>
+															</Property>
+															<Property Name="FadeOutTime" Type="Real64">
+																<ValueList>
+																	<Value>0.5</Value>
+																</ValueList>
+															</Property>
+														</PropertyList>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Screw_Moves_RawMetal_Lp_V2" ID="{A67741AB-7F58-41CA-9877-3E1AD670F716}"/>
+														<PropertyList>
+															<Property Name="FadeInTime" Type="Real64">
+																<ValueList>
+																	<Value>0.5</Value>
+																</ValueList>
+															</Property>
+															<Property Name="FadeOutTime" Type="Real64">
+																<ValueList>
+																	<Value>0.5</Value>
+																</ValueList>
+															</Property>
+														</PropertyList>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Screw_Move_HollowMetal_High_Lp" ID="{D10AE1C9-E064-4732-8B67-85A597480412}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Screw_Moves_HollowMetal_Lp" ID="{8D2645F7-F5C4-4863-B945-E9C2F1F2D754}"/>
+														<PropertyList>
+															<Property Name="FadeInTime" Type="Real64">
+																<ValueList>
+																	<Value>0.5</Value>
+																</ValueList>
+															</Property>
+															<Property Name="FadeOutTime" Type="Real64">
+																<ValueList>
+																	<Value>0.5</Value>
+																</ValueList>
+															</Property>
+														</PropertyList>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="HollowMetal" ID="{B48E1A4E-03C3-4621-AB8F-14EF9824A50A}"/>
+														<ItemList>
+															<ItemRef Name="Screw_Moves_HollowMetal_Lp" ID="{8D2645F7-F5C4-4863-B945-E9C2F1F2D754}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Wood" ID="{E0FD219F-8FF2-4E39-90B4-582224534522}"/>
+														<ItemList>
+															<ItemRef Name="Screw_Moves_Wood_Lp" ID="{3ED1737B-6A60-4508-A779-E12405747336}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Metal" ID="{A94EA2C4-51BE-4DE1-9AA0-035A3CE20838}"/>
+														<ItemList>
+															<ItemRef Name="Screw_Moves_RawMetal_Lp_V2" ID="{A67741AB-7F58-41CA-9877-3E1AD670F716}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Concrete" ID="{289ADDCD-6C14-4411-8FDA-0B0545940D4F}"/>
+														<ItemList>
+															<ItemRef Name="Screw_Moves_Concrete_Lp" ID="{E3A05E53-094C-4BCC-B4DB-72EB259DCC26}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="SCREW_ONE" ID="{EEA518EF-7D16-4F39-9F40-04F605EDAC13}" ShortID="1051516994">
+											<PropertyList>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{0CABC112-18E7-4161-8FCF-1E6D7C68AFEB}" ShortID="870659486">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Speed" ID="{DF16E620-3E08-4BFF-8576-D64A4C8906FE}" WorkUnitID="{4828BBDD-BDC9-46F6-B8AB-A0BEAAD66730}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{6FAA3038-EC4F-4905-B14B-EB749EE1A850}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Concrete" ID="{289ADDCD-6C14-4411-8FDA-0B0545940D4F}" WorkUnitID="{C8FBA1BA-9FAE-4718-BDD4-94727EE8F663}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Material" ID="{ADD8B225-932A-4161-A26C-4AB90CE9A941}" WorkUnitID="{C8FBA1BA-9FAE-4718-BDD4-94727EE8F663}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Screw_Move_HollowMetal_High_Lp" ID="{3DC9C29C-3E77-4D09-B685-E543F3A97910}" ShortID="657107273">
+													<PropertyList>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Screw_Move_HollowMetal_High_Lp" ID="{4D74354E-644B-4B32-B147-229686D0ED75}" ShortID="1060209275">
+															<Language>SFX</Language>
+															<AudioFile>SCREW\Screw_Move_HollowMetal_High_Lp.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="956085264"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Screw_Move_HollowMetal_High_Lp" ID="{4D74354E-644B-4B32-B147-229686D0ED75}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<BlendContainer Name="Screw_Moves_Concrete_1G" ID="{19FFCD47-AB83-49F9-AE26-9C395A14B546}" ShortID="557227803">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Screw_Moves_Concrete_Lp" ID="{31ABE612-56BB-492D-978E-365C8BC53520}" ShortID="801437059">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Screw_Moves_Concrete_Lp" ID="{A10C699F-9C01-4922-829B-9499EDF4B1DA}" ShortID="309461809">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="69.5542726046483"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="4.37934308992281E-02"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="4.13590313580652"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>SCREW\Screw_Moves_Concrete_Lp.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Screw_Moves_Concrete_Lp" ID="{A10C699F-9C01-4922-829B-9499EDF4B1DA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Screw_Moves_Concrete_Lp_01" ID="{11EBD917-2A21-45F1-8CD4-8B58A79E05A3}" ShortID="677851941">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>-120</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Screw_Moves_Concrete_Lp" ID="{4BE492F4-7419-4B11-B285-257C2B1F9E97}" ShortID="351932438">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="69.5542726046483"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="4.37934308992281E-02"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="4.13590313580652"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>SCREW\Screw_Moves_Concrete_Lp.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="309461809"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Screw_Moves_Concrete_Lp" ID="{4BE492F4-7419-4B11-B285-257C2B1F9E97}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</BlendContainer>
+												<BlendContainer Name="Screw_Moves_HollowMetal_1G" ID="{0767C83B-4C3D-4909-BF5C-6D536520A1B1}" ShortID="47292271">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Screw_Moves_HollowMetal_Lp" ID="{44ADEC4D-3586-409A-A673-C5F591F834FB}" ShortID="839314043">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Screw_Moves_HollowMetal_Lp" ID="{26BF173F-4B98-4F18-807F-43818AD89F6F}" ShortID="198411007">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="69.7846855439703"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="3.92538856184846E-02"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="7.02644552570874"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>SCREW\Screw_Moves_HollowMetal_Lp.wav</AudioFile>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Screw_Moves_HollowMetal_Lp" ID="{26BF173F-4B98-4F18-807F-43818AD89F6F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</BlendContainer>
+												<BlendContainer Name="Screw_Moves_RawMetal_1G" ID="{2C19037A-069B-4412-B68A-A5020177A4A0}" ShortID="525344385">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Screw_Moves_RawMetal_Lp_V2" ID="{D4378C36-B35D-4907-8D1D-77D371C9A658}" ShortID="138775981">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>-380</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-3</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Screw_Moves_RawMetal_Lp_V2" ID="{94280A6E-B188-41D1-BD1F-AFE242C34AE7}" ShortID="576493384">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="87.2308569299651"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="4.79769713114811E-02"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="7.01772244001574"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>SCREW\Screw_Moves_RawMetal_Lp_V2.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="157029568"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Screw_Moves_RawMetal_Lp_V2" ID="{94280A6E-B188-41D1-BD1F-AFE242C34AE7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</BlendContainer>
+												<BlendContainer Name="Screw_Moves_Wood_1G" ID="{C16709F4-948B-493F-866F-B4B5175E4632}" ShortID="1032868741">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Screw_Moves_Wood_Lp" ID="{1E6727C6-EE8C-45DB-B7A9-B341C8F9EB00}" ShortID="709530580">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="CHARACTER" ID="{9506D155-44D0-4CC9-8CB5-2A97506DF6BD}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Screw_Moves_Wood_Lp" ID="{972BF891-D46C-49A8-BA16-97E92F31C959}" ShortID="724621745">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="324.447189623224"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0.355923409512044"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="3.66940086473132"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>SCREW\Screw_Moves_Wood_Lp.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="169863240"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Screw_Moves_Wood_Lp" ID="{972BF891-D46C-49A8-BA16-97E92F31C959}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</BlendContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Screw_Moves_HollowMetal_1G" ID="{0767C83B-4C3D-4909-BF5C-6D536520A1B1}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Screw_Moves_Concrete_1G" ID="{19FFCD47-AB83-49F9-AE26-9C395A14B546}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Screw_Moves_RawMetal_1G" ID="{2C19037A-069B-4412-B68A-A5020177A4A0}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Screw_Move_HollowMetal_High_Lp" ID="{3DC9C29C-3E77-4D09-B685-E543F3A97910}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Screw_Moves_Wood_1G" ID="{C16709F4-948B-493F-866F-B4B5175E4632}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="SCREW_ZERO" ID="{CA78AFBB-4994-4B82-9C58-F58E1FDE4A72}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SCREW_ONE" ID="{EEA518EF-7D16-4F39-9F40-04F605EDAC13}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Zero" ID="{C63079CB-675D-47AB-91D5-DF70E9EDB3B0}"/>
+												<ItemList>
+													<ItemRef Name="SCREW_ZERO" ID="{CA78AFBB-4994-4B82-9C58-F58E1FDE4A72}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
@@ -213,19 +1236,19 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Ambiances_2D" ID="{1D660C01-64BA-4060-86F2-A106190910B7}" ShortID="1042589180">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+									<ObjectRef Name="Amb_2D" ID="{A42CB514-412F-4C26-AF0A-A3C25EFB9CBA}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Amb_Workshop_Air_Slow_Lp_01" ID="{9B1427AD-0586-459A-9B08-AF4C8F4D4BF8}" ShortID="1064525223">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
+								<BlendContainer Name="Amb_Workshop" ID="{0D5893C7-4E6E-4701-9CCF-71B2AD4983CE}" ShortID="566514275">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
@@ -235,46 +1258,8 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Amb_Workshop_Air_Slow_Lp_01" ID="{A31FE50B-D7C2-4988-AFF2-640EA400498D}" ShortID="420413879">
-											<Language>SFX</Language>
-											<AudioFile>Amb_Workshop_Air_Slow_Lp_01.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Amb_Workshop_Air_Slow_Lp_01" ID="{A31FE50B-D7C2-4988-AFF2-640EA400498D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</ActorMixer>
-						<ActorMixer Name="Ambiances_3D" ID="{19C5C0CD-2C2E-463C-8C44-668FE6297BE5}" ShortID="604458513">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="Ambiances_Test" ID="{48156F68-9FD8-4187-81D3-195CF3C7376E}" ShortID="587498680">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Ambiance test" ID="{8320C201-38A6-40B0-8CF6-23BF4D90833A}" ShortID="485429915">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-											</PropertyList>
+										<Sound Name="Amb_Workshop_Air_Slow_Lp" ID="{317C9ADF-DD9F-437C-8099-9608920AE205}" ShortID="744720782">
 											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="Att_Far" ID="{E663B870-47B7-4BC3-9E62-7739E0287BE5}" WorkUnitID="{6BAC450B-DF25-494E-9313-05A28BAF4893}"/>
-												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
 												</Reference>
@@ -283,20 +1268,90 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Ambience, City, Street Junction, Pedestrians, Traffic, Night, Albert Street, Charlotte Street, Brisbane, Australia SND39491" ID="{9ED63CA9-DB0C-4381-9E32-59E35A27F2F9}" ShortID="621396537">
+												<AudioFileSource Name="Amb_Workshop_Air_Slow_Lp" ID="{CC7A3283-9447-49F0-9EDA-63EC8A2CDC4C}" ShortID="27078415">
 													<Language>SFX</Language>
-													<AudioFile>Ambience, City, Street Junction, Pedestrians, Traffic, Night, Albert Street, Charlotte Street, Brisbane, Australia SND39491.wav</AudioFile>
+													<AudioFile>Amb_Workshop_Air_Slow_Lp.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
-											<PositioningInfo>
-												<Panner Name="" ID="{A99C883E-618B-4714-8A1A-2D98715E3B79}"/>
-											</PositioningInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="Ambience, City, Street Junction, Pedestrians, Traffic, Night, Albert Street, Charlotte Street, Brisbane, Australia SND39491" ID="{9ED63CA9-DB0C-4381-9E32-59E35A27F2F9}" Platform="Linked"/>
+												<ActiveSource Name="Amb_Workshop_Air_Slow_Lp" ID="{CC7A3283-9447-49F0-9EDA-63EC8A2CDC4C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Amb_Workshop_Low_Lp" ID="{54201258-3816-4B15-B0F7-6317672F39AB}" ShortID="936428181">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMBIANT" ID="{5E7B647F-F3CF-4ECB-ABC0-5006359071C4}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Workshop_Low_Lp" ID="{BB1E39F6-FA79-4C27-BDEA-BF4B6180E1F0}" ShortID="598344507">
+													<Language>SFX</Language>
+													<AudioFile>Amb_Workshop_Low_Lp.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Workshop_Low_Lp" ID="{BB1E39F6-FA79-4C27-BDEA-BF4B6180E1F0}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</RandomSequenceContainer>
+								</BlendContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Ambiances_3D" ID="{19C5C0CD-2C2E-463C-8C44-668FE6297BE5}" ShortID="604458513">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Amb_3D" ID="{5AED36EF-A1EE-4433-902C-81405861BD6F}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Amb_UnderTable" ID="{113B6C97-1836-4F9A-9D72-39D56A934B1F}" ShortID="550462875">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Amb_Workshop_UnderTable_Lp" ID="{74CACDE8-F4BA-4EDB-ADFB-4988FED18A4B}" ShortID="645159897">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{10342754-E9CC-4A5B-83BD-FF0D7BB21283}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMBIANT" ID="{5E7B647F-F3CF-4ECB-ABC0-5006359071C4}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Amb_Workshop_UnderTable_Lp" ID="{E52C25F4-5038-4DDE-9FCE-48EB770FA802}" ShortID="102572542">
+													<Language>SFX</Language>
+													<AudioFile>Amb_Workshop_UnderTable_Lp.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Amb_Workshop_UnderTable_Lp" ID="{E52C25F4-5038-4DDE-9FCE-48EB770FA802}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

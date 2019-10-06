@@ -21,9 +21,9 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1891561585	Workshop_Big			\Default Work Unit\Master Audio Bus\REVERBS\Workshop_Big	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	420413879	Amb_Workshop_Air_Slow_Lp_01	D:\Desktop\LD45\LD45_WwiseProject\.cache\Windows\SFX\Amb_Workshop_Air_Slow_Lp_01_9B96ECC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIANT\Ambiances_2D\Amb_Workshop_Air_Slow_Lp_01		494143
-	572981973	Object_Ambiant_Workshop_Fridge_01	D:\Desktop\LD45\LD45_WwiseProject\.cache\Windows\SFX\Object_Ambiant_Workshop_Fridge_01_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIANT\Objects\Fridge\Object_Ambiant_Workshop_Fridge_01		276875
-	621396537	Ambiance test	D:\Desktop\LD45\LD45_WwiseProject\.cache\Windows\SFX\Ambience, City, Street Junction, Pedestrians, Traffic, Night, Albert Street, Charlotte Street, Brisbane, Australia SND39491_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIANT\Ambiances_3D\Ambiances_Test\Ambiance test		486688
-	891429978	Video Game, Music, Level 1 SND29806 1	D:\Desktop\LD45\LD45_WwiseProject\.cache\Windows\SFX\Video Game, Music, Level 1 SND29806 1_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUSIC\Video Game, Music, Level 1 SND29806 1		115857
-	1057227399	Screw_Movement	D:\Desktop\LD45\LD45_WwiseProject\.cache\Windows\SFX\Metal Cart, Roll, Light SND8204_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\CHARACTER\SFX\Screw_Movement		133296
+	420413879	Amb_Workshop_Air_Slow_Lp_01	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Amb_Workshop_Air_Slow_Lp_01_9B96ECC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIANT\Ambiances_2D\Amb_Workshop_Air_Slow_Lp_01		494143
+	572981973	Object_Ambiant_Workshop_Fridge_01	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Object_Ambiant_Workshop_Fridge_01_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIANT\Objects\Fridge\Object_Ambiant_Workshop_Fridge_01		276875
+	621396537	Ambiance test	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Ambience, City, Street Junction, Pedestrians, Traffic, Night, Albert Street, Charlotte Street, Brisbane, Australia SND39491_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\AMBIANT\Ambiances_3D\Ambiances_Test\Ambiance test		486688
+	891429978	Video Game, Music, Level 1 SND29806 1	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Video Game, Music, Level 1 SND29806 1_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\MUSIC\Video Game, Music, Level 1 SND29806 1		115857
+	1057227399	Screw_Movement	D:\Boulot\LD45 - Screw Vis\LD45_WwiseProject\.cache\Windows\SFX\Metal Cart, Roll, Light SND8204_6296B0F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\PLAYER\P_Foley\Screw_Movement		133296
 
