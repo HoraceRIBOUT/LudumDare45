@@ -5,18 +5,21 @@
 			<ChildrenList>
 				<GameParameter Name="Speed" ID="{DF16E620-3E08-4BFF-8576-D64A4C8906FE}">
 					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="FallSpeed" ID="{E7BB189F-ADD9-4EC2-99B0-8283B40735B9}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Blowtorch_Hold" ID="{E7E08878-8695-4459-8BF3-0E85E5B0DE79}">
+					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="Surfaces" ID="{56BAF697-62B8-4283-A0AD-D495C2C62B3A}">
-					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="1"/>
-						<Property Name="Max" Type="Real64" Value="40"/>
-						<Property Name="Min" Type="Real64" Value="1"/>
-					</PropertyList>
-				</GameParameter>
-				<GameParameter Name="FallSpeed" ID="{E7BB189F-ADD9-4EC2-99B0-8283B40735B9}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

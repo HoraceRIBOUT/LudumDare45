@@ -16,8 +16,6 @@
 						<Switch Name="One" ID="{D1080395-CC81-4043-8904-5925E5E963C3}"/>
 						<Switch Name="Two" ID="{5ADF269A-8FEC-4925-B4D1-632E0674B3CA}"/>
 						<Switch Name="Three" ID="{76D4ACB2-6094-4D46-818B-BFB8C75C59D5}"/>
-						<Switch Name="Four" ID="{D8661117-ADD3-41C6-80FF-AAF7493A4E97}"/>
-						<Switch Name="Five" ID="{4D4B6722-A164-4CE0-A291-32B46E0F551B}"/>
 						<Switch Name="Zero" ID="{C63079CB-675D-47AB-91D5-DF70E9EDB3B0}"/>
 					</ChildrenList>
 				</SwitchGroup>
