@@ -157,6 +157,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Player_PickupGear" ID="{9D1583FC-011C-4D84-ADA3-4B08FF961F22}">
+					<ChildrenList>
+						<Action Name="" ID="{0A55E3E1-3626-4781-A64F-0A47F041E5EF}" ShortID="431975485">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_PickupGear" ID="{BB12D16E-FA5A-4363-822C-B848C9A5B86F}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
