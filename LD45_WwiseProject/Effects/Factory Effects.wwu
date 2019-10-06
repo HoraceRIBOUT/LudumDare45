@@ -45,7 +45,8 @@
 						<Effect Name="High_Impact" ID="{2AFD6FB0-C906-4683-A377-FEEEF72967B0}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
 								<Property Name="AttackTime" Type="Real32" Value="0.04"/>
-								<Property Name="Ratio" Type="Real32" Value="12"/>
+								<Property Name="OutputGain" Type="Real32" Value="1.6"/>
+								<Property Name="Ratio" Type="Real32" Value="23.2"/>
 								<Property Name="ReleaseTime" Type="Real32" Value="0.5"/>
 								<Property Name="Threshold" Type="Real32" Value="-6"/>
 							</PropertyList>

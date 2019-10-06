@@ -116,7 +116,7 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
-						<Property Name="RadiusMax" Type="Real64" Value="500"/>
+						<Property Name="RadiusMax" Type="Real64" Value="1200"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -132,7 +132,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>500</XPos>
+											<XPos>1200</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -159,7 +159,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>500</XPos>
+											<XPos>1200</XPos>
 											<YPos>20</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -180,7 +180,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>500</XPos>
+											<XPos>1200</XPos>
 											<YPos>23</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -198,7 +198,7 @@
 				</Attenuation>
 				<Attenuation Name="Att_Close" ID="{436C9A12-D35B-450A-8ABA-299C06587365}" ShortID="207505498">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="300"/>
+						<Property Name="RadiusMax" Type="Real64" Value="500"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -214,7 +214,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>300</XPos>
+											<XPos>500</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

@@ -30,7 +30,7 @@
 						<Action Name="" ID="{6D05D8A3-2A4C-4C42-9637-7E5D74212BE3}" ShortID="1055146410">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Screw_Gears" ID="{FA21B00E-080A-4633-8E4D-1A6DE83C3185}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+									<ObjectRef Name="SCREW_MOVES" ID="{FA21B00E-080A-4633-8E4D-1A6DE83C3185}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -75,6 +75,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Amb_UnderTable" ID="{113B6C97-1836-4F9A-9D72-39D56A934B1F}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Screw_Hit_Gears" ID="{0043308F-A1D8-4CCB-B2C3-C2100B941CEF}">
+					<ChildrenList>
+						<Action Name="" ID="{3C5417D9-61DE-42EC-B853-C15FE4DEE2E1}" ShortID="697753953">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SCREW_HIT" ID="{11D3D709-0722-49E3-B388-92E7B97B0CCA}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_WindFalling" ID="{A1826BEF-AE0E-4C72-B767-3507309A14B9}">
+					<ChildrenList>
+						<Action Name="" ID="{E85E0D69-24D9-46A4-AAD2-DDB8C90D0D11}" ShortID="151791509">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_WindFalling" ID="{083D2E5A-F334-493E-B22C-58B04CB219E2}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
