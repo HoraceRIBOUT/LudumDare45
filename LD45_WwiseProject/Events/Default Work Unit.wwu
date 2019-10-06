@@ -3,23 +3,12 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{8B8516EF-2BCE-4A3C-A880-38237C97ACC1}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Intro_Music" ID="{CBFC7C04-A79A-4AD2-A411-7860CBB56C3B}">
+				<Event Name="Music_Test" ID="{CBFC7C04-A79A-4AD2-A411-7860CBB56C3B}">
 					<ChildrenList>
 						<Action Name="" ID="{06282902-EDEA-48E6-A54C-3E634B190DDE}" ShortID="977939973">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Video Game, Music, Level 1 SND29806 1" ID="{54859099-0536-4DCC-AE3D-8FE38F29561D}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Screw_Movement" ID="{E958D985-37C5-4C5A-A892-8C4BB282E503}">
-					<ChildrenList>
-						<Action Name="" ID="{B1BD1CBA-E2B3-49D9-9D6F-394935606B96}" ShortID="685553999">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Screw_Movement" ID="{59AB4C63-9E81-4EFA-9652-BD34885D928C}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -36,23 +25,56 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Amb_Workshop_Air_Slow_Lp_01" ID="{B95D5239-49B5-4142-A9BA-8DC36AE96058}">
+				<Event Name="Screw_Movement_Gears" ID="{94723422-8985-4099-90FD-1E4543855531}">
 					<ChildrenList>
-						<Action Name="" ID="{7EF3B779-C454-4670-A32E-FA29A6263463}" ShortID="743932336">
+						<Action Name="" ID="{6D05D8A3-2A4C-4C42-9637-7E5D74212BE3}" ShortID="1055146410">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Amb_Workshop_Air_Slow_Lp_01" ID="{9B1427AD-0586-459A-9B08-AF4C8F4D4BF8}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+									<ObjectRef Name="Screw_Gears" ID="{FA21B00E-080A-4633-8E4D-1A6DE83C3185}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Ambiance_test" ID="{D1914610-D430-4997-8185-4866FAC08D29}">
+				<Event Name="Amb_Room" ID="{885C9BF1-4C35-4F3A-AFCB-2AD9A24A4A2E}">
 					<ChildrenList>
-						<Action Name="" ID="{5560EB23-D750-49CC-B309-6599EC3D0613}" ShortID="592331001">
+						<Action Name="" ID="{FCAA4B3D-4DED-438E-90FF-A4880CBC339B}" ShortID="722345969">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Ambiance test" ID="{8320C201-38A6-40B0-8CF6-23BF4D90833A}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+									<ObjectRef Name="Amb_Room" ID="{0D5893C7-4E6E-4701-9CCF-71B2AD4983CE}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_JumpSpring" ID="{9F1BCEE9-2F89-47E7-AF94-D20F3003CCC4}">
+					<ChildrenList>
+						<Action Name="" ID="{CBB2F3FA-AB4A-4ED7-8427-2AB5F4E3E9CA}" ShortID="607140846">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_JumpSpring" ID="{55BED6E7-69B2-4C5A-955E-C50030945F05}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Object_Ambiant_Workshop_Rat_Hole" ID="{D7F98179-A6DF-4107-A901-FF4A7BCB61A9}">
+					<ChildrenList>
+						<Action Name="" ID="{0F08BD2D-7B3F-4940-B99D-7436D51F23AE}" ShortID="863136644">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rat_Hole" ID="{E573D169-EF27-489A-98A7-E9A4A819E077}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Amb_UnderTable" ID="{1D2ECB24-F843-4F0F-B853-140904EE3009}">
+					<ChildrenList>
+						<Action Name="" ID="{872D2216-D4A5-4B20-92E2-B1AEB3C73718}" ShortID="597736887">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Amb_UnderTable" ID="{113B6C97-1836-4F9A-9D72-39D56A934B1F}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
