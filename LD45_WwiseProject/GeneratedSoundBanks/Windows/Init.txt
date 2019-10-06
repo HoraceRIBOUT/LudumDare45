@@ -11,6 +11,13 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	281756661	Workshop_Little			\Default Work Unit\Master Audio Bus\REVERBS\Workshop_Little	
 	914717957	Workshop_Metal_Pipe			\Default Work Unit\Master Audio Bus\REVERBS\Workshop_Metal_Pipe	
 	1891561585	Workshop_Big			\Default Work Unit\Master Audio Bus\REVERBS\Workshop_Big	
+	3545540100	Workshop_RatHole			\Default Work Unit\Master Audio Bus\REVERBS\Workshop_RatHole	
+
+Effect plug-ins	ID	Name	Type				Notes
+	701863527	Inside_My_Head	Wwise RoomVerb			
+	1203617187	Machine_Gun_Hangar	Wwise RoomVerb			
+	2038996943	Plate_Sizzle	Wwise RoomVerb			
+	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

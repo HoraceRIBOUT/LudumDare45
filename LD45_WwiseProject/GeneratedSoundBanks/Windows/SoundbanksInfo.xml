@@ -21,10 +21,23 @@
 			<ShortName>LD45_Main</ShortName>
 			<Path>LD45_Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1539411869" Name="Intro_Music" ObjectPath="\Events\Default Work Unit\Intro_Music"/>
+				<Event Id="3202361783" Name="Amb_Room" ObjectPath="\Events\Default Work Unit\Amb_Room"/>
+				<Event Id="3270200164" Name="Amb_UnderTable" ObjectPath="\Events\Default Work Unit\Amb_UnderTable"/>
+				<Event Id="1068347553" Name="Music_Test" ObjectPath="\Events\Default Work Unit\Music_Test"/>
 				<Event Id="1205858677" Name="Object_Ambiant_Workshop_Fridge_01" ObjectPath="\Events\Default Work Unit\Object_Ambiant_Workshop_Fridge_01"/>
+				<Event Id="1746703344" Name="Object_Ambiant_Workshop_Rat_Hole" ObjectPath="\Events\Default Work Unit\Object_Ambiant_Workshop_Rat_Hole"/>
+				<Event Id="2529854466" Name="Player_JumpSpring" ObjectPath="\Events\Default Work Unit\Player_JumpSpring"/>
+				<Event Id="337504512" Name="Screw_Movement_Gears" ObjectPath="\Events\Default Work Unit\Screw_Movement_Gears"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="1010199" Language="SFX">
+					<ShortName>AWCK ADD Bullet Impact Metal.wav</ShortName>
+					<Path>SFX\AWCK ADD Bullet Impact Metal_4D6E44B9.wem</Path>
+				</File>
+				<File Id="11609969" Language="SFX">
+					<ShortName>Little Rat 2.wav</ShortName>
+					<Path>SFX\Little Rat 2_B06927C4.wem</Path>
+				</File>
 				<File Id="27078415" Language="SFX">
 					<ShortName>Amb_Workshop_Air_Slow_Lp.wav</ShortName>
 					<Path>SFX\Amb_Workshop_Air_Slow_Lp_6296B0F9.wem</Path>
@@ -33,9 +46,25 @@
 					<ShortName>Player_JumpSping_01.wav</ShortName>
 					<Path>SFX\Player_JumpSping_01_6296B0F9.wem</Path>
 				</File>
+				<File Id="83102172" Language="SFX">
+					<ShortName>Rat's life.wav</ShortName>
+					<Path>SFX\Rat's life_6D26C243.wem</Path>
+				</File>
 				<File Id="102572542" Language="SFX">
 					<ShortName>Amb_Workshop_UnderTable_Lp.wav</ShortName>
 					<Path>SFX\Amb_Workshop_UnderTable_Lp_9B96ECC7.wem</Path>
+				</File>
+				<File Id="110837820" Language="SFX">
+					<ShortName>AWCK ADD Bullet Impact Metal.wav</ShortName>
+					<Path>SFX\AWCK ADD Bullet Impact Metal_6E842B91.wem</Path>
+				</File>
+				<File Id="114079171" Language="SFX">
+					<ShortName>AWCK ADD Metal Sweetener Large 02.wav</ShortName>
+					<Path>SFX\AWCK ADD Metal Sweetener Large 02_7EDE9290.wem</Path>
+				</File>
+				<File Id="151360849" Language="SFX">
+					<ShortName>Siege Wood Rattle 04.wav</ShortName>
+					<Path>SFX\Siege Wood Rattle 04_894254CF.wem</Path>
 				</File>
 				<File Id="157029568" Language="SFX">
 					<ShortName>SCREW\Screw_Moves_RawMetal_Lp_V2.wav</ShortName>
@@ -47,35 +76,207 @@
 				</File>
 				<File Id="198411007" Language="SFX">
 					<ShortName>SCREW\Screw_Moves_HollowMetal_Lp.wav</ShortName>
-					<Path>SFX\SCREW\Screw_Moves_HollowMetal_Lp_91E3AD54.wem</Path>
+					<Path>SFX\SCREW\Screw_Moves_HollowMetal_Lp_E03CC9D2.wem</Path>
+				</File>
+				<File Id="252211869" Language="SFX">
+					<ShortName>Rat's life.wav</ShortName>
+					<Path>SFX\Rat's life_5CE65D81.wem</Path>
+				</File>
+				<File Id="287406291" Language="SFX">
+					<ShortName>Little Rat 2.wav</ShortName>
+					<Path>SFX\Little Rat 2_B9328CAC.wem</Path>
+				</File>
+				<File Id="291353526" Language="SFX">
+					<ShortName>Rat's life.wav</ShortName>
+					<Path>SFX\Rat's life_25970608.wem</Path>
 				</File>
 				<File Id="309461809" Language="SFX">
 					<ShortName>SCREW\Screw_Moves_Concrete_Lp.wav</ShortName>
 					<Path>SFX\SCREW\Screw_Moves_Concrete_Lp_D23279F6.wem</Path>
 				</File>
+				<File Id="320042836" Language="SFX">
+					<ShortName>Little Rat 2.wav</ShortName>
+					<Path>SFX\Little Rat 2_93B2EAF0.wem</Path>
+				</File>
+				<File Id="320834138" Language="SFX">
+					<ShortName>AWCK ADD Metal Sweetener Large 04.wav</ShortName>
+					<Path>SFX\AWCK ADD Metal Sweetener Large 04_165872EE.wem</Path>
+				</File>
+				<File Id="324263324" Language="SFX">
+					<ShortName>Siege Wood Rattle 04.wav</ShortName>
+					<Path>SFX\Siege Wood Rattle 04_EA2E5C69.wem</Path>
+				</File>
+				<File Id="362920013" Language="SFX">
+					<ShortName>AWCK ADD Bullet Impact Metal.wav</ShortName>
+					<Path>SFX\AWCK ADD Bullet Impact Metal_DE47D820.wem</Path>
+				</File>
+				<File Id="377220503" Language="SFX">
+					<ShortName>Little Rat 2.wav</ShortName>
+					<Path>SFX\Little Rat 2_C3AFCDF0.wem</Path>
+				</File>
+				<File Id="377886328" Language="SFX">
+					<ShortName>AWCK ADD Metal Sweetener Large 04.wav</ShortName>
+					<Path>SFX\AWCK ADD Metal Sweetener Large 04_D0CE07D7.wem</Path>
+				</File>
+				<File Id="384464175" Language="SFX">
+					<ShortName>Little Rat 2.wav</ShortName>
+					<Path>SFX\Little Rat 2_774F67FA.wem</Path>
+				</File>
 				<File Id="412372338" Language="SFX">
 					<ShortName>Player_JumpSping_02.wav</ShortName>
 					<Path>SFX\Player_JumpSping_02_6296B0F9.wem</Path>
+				</File>
+				<File Id="413426446" Language="SFX">
+					<ShortName>Little Rat 2.wav</ShortName>
+					<Path>SFX\Little Rat 2_12EB896B.wem</Path>
+				</File>
+				<File Id="416033175" Language="SFX">
+					<ShortName>Siege Wood Rattle 04.wav</ShortName>
+					<Path>SFX\Siege Wood Rattle 04_C57AFE07.wem</Path>
+				</File>
+				<File Id="419483222" Language="SFX">
+					<ShortName>Little Rat 2.wav</ShortName>
+					<Path>SFX\Little Rat 2_2E3AC2E6.wem</Path>
+				</File>
+				<File Id="440768480" Language="SFX">
+					<ShortName>Little Rat 2.wav</ShortName>
+					<Path>SFX\Little Rat 2_4114A8E8.wem</Path>
+				</File>
+				<File Id="446006501" Language="SFX">
+					<ShortName>AWCK ADD Bullet Impact Metal.wav</ShortName>
+					<Path>SFX\AWCK ADD Bullet Impact Metal_FE071717.wem</Path>
+				</File>
+				<File Id="446696013" Language="SFX">
+					<ShortName>AWCK ADD Metal Sweetener Large 02.wav</ShortName>
+					<Path>SFX\AWCK ADD Metal Sweetener Large 02_9F215391.wem</Path>
+				</File>
+				<File Id="474099346" Language="SFX">
+					<ShortName>Rat's life.wav</ShortName>
+					<Path>SFX\Rat's life_AA2D91E0.wem</Path>
+				</File>
+				<File Id="498095128" Language="SFX">
+					<ShortName>Big Rat.wav</ShortName>
+					<Path>SFX\Big Rat_7C6A07F4.wem</Path>
+				</File>
+				<File Id="498801153" Language="SFX">
+					<ShortName>Siege Wood Rattle 04.wav</ShortName>
+					<Path>SFX\Siege Wood Rattle 04_ABA1ABC2.wem</Path>
+				</File>
+				<File Id="511018070" Language="SFX">
+					<ShortName>Big Rat.wav</ShortName>
+					<Path>SFX\Big Rat_74877F17.wem</Path>
 				</File>
 				<File Id="572981973" Language="SFX">
 					<ShortName>Object_Ambiant_Workshop_Fridge_01.wav</ShortName>
 					<Path>SFX\Object_Ambiant_Workshop_Fridge_01_6296B0F9.wem</Path>
 				</File>
+				<File Id="584470614" Language="SFX">
+					<ShortName>AWCK ADD Metal Sweetener Large 02.wav</ShortName>
+					<Path>SFX\AWCK ADD Metal Sweetener Large 02_A7AE1AEE.wem</Path>
+				</File>
+				<File Id="594393233" Language="SFX">
+					<ShortName>Little Rat 2.wav</ShortName>
+					<Path>SFX\Little Rat 2_6DB4173A.wem</Path>
+				</File>
 				<File Id="598344507" Language="SFX">
 					<ShortName>Amb_Workshop_Low_Lp.wav</ShortName>
 					<Path>SFX\Amb_Workshop_Low_Lp_6296B0F9.wem</Path>
+				</File>
+				<File Id="621077961" Language="SFX">
+					<ShortName>AWCK ADD Bullet Impact Metal.wav</ShortName>
+					<Path>SFX\AWCK ADD Bullet Impact Metal_2E5CEECE.wem</Path>
+				</File>
+				<File Id="639554167" Language="SFX">
+					<ShortName>AWCK ADD Metal Sweetener Large 04.wav</ShortName>
+					<Path>SFX\AWCK ADD Metal Sweetener Large 04_2FB7AFF1.wem</Path>
+				</File>
+				<File Id="651064249" Language="SFX">
+					<ShortName>Siege Wood Rattle 04.wav</ShortName>
+					<Path>SFX\Siege Wood Rattle 04_0F34B382.wem</Path>
+				</File>
+				<File Id="669684783" Language="SFX">
+					<ShortName>Big Rat.wav</ShortName>
+					<Path>SFX\Big Rat_E91078CB.wem</Path>
 				</File>
 				<File Id="674275159" Language="SFX">
 					<ShortName>Player_JumpSping_03.wav</ShortName>
 					<Path>SFX\Player_JumpSping_03_6296B0F9.wem</Path>
 				</File>
+				<File Id="682609222" Language="SFX">
+					<ShortName>AWCK ADD Metal Sweetener Large 02.wav</ShortName>
+					<Path>SFX\AWCK ADD Metal Sweetener Large 02_6F70CCCF.wem</Path>
+				</File>
+				<File Id="689458759" Language="SFX">
+					<ShortName>Siege Wood Rattle 04.wav</ShortName>
+					<Path>SFX\Siege Wood Rattle 04_2524C668.wem</Path>
+				</File>
+				<File Id="694413709" Language="SFX">
+					<ShortName>AWCK ADD Metal Sweetener Large 04.wav</ShortName>
+					<Path>SFX\AWCK ADD Metal Sweetener Large 04_BF291336.wem</Path>
+				</File>
+				<File Id="712669066" Language="SFX">
+					<ShortName>Rat's life.wav</ShortName>
+					<Path>SFX\Rat's life_1FA96AC1.wem</Path>
+				</File>
+				<File Id="727822120" Language="SFX">
+					<ShortName>Rat's life.wav</ShortName>
+					<Path>SFX\Rat's life_B8A5FF2F.wem</Path>
+				</File>
+				<File Id="732406516" Language="SFX">
+					<ShortName>AWCK ADD Metal Sweetener Large 02.wav</ShortName>
+					<Path>SFX\AWCK ADD Metal Sweetener Large 02_946AE0A1.wem</Path>
+				</File>
+				<File Id="735493796" Language="SFX">
+					<ShortName>AWCK ADD Metal Sweetener Large 02.wav</ShortName>
+					<Path>SFX\AWCK ADD Metal Sweetener Large 02_89F4D687.wem</Path>
+				</File>
+				<File Id="777306862" Language="SFX">
+					<ShortName>Little Rat 2.wav</ShortName>
+					<Path>SFX\Little Rat 2_73B1D0F4.wem</Path>
+				</File>
+				<File Id="788373505" Language="SFX">
+					<ShortName>AWCK ADD Metal Sweetener Large 04.wav</ShortName>
+					<Path>SFX\AWCK ADD Metal Sweetener Large 04_EA265C0F.wem</Path>
+				</File>
+				<File Id="792538155" Language="SFX">
+					<ShortName>Big Rat.wav</ShortName>
+					<Path>SFX\Big Rat_4F8F73C9.wem</Path>
+				</File>
+				<File Id="802203521" Language="SFX">
+					<ShortName>Siege Wood Rattle 04.wav</ShortName>
+					<Path>SFX\Siege Wood Rattle 04_5828299C.wem</Path>
+				</File>
+				<File Id="813109337" Language="SFX">
+					<ShortName>AWCK ADD Metal Sweetener Large 04.wav</ShortName>
+					<Path>SFX\AWCK ADD Metal Sweetener Large 04_163C8F49.wem</Path>
+				</File>
+				<File Id="853358936" Language="SFX">
+					<ShortName>Little Rat 2.wav</ShortName>
+					<Path>SFX\Little Rat 2_9939741B.wem</Path>
+				</File>
 				<File Id="891429978" Language="SFX">
 					<ShortName>Video Game, Music, Level 1 SND29806 1.wav</ShortName>
 					<Path>SFX\Video Game, Music, Level 1 SND29806 1_6296B0F9.wem</Path>
 				</File>
+				<File Id="897454119" Language="SFX">
+					<ShortName>Big Rat.wav</ShortName>
+					<Path>SFX\Big Rat_F9BFC398.wem</Path>
+				</File>
 				<File Id="906161043" Language="SFX">
 					<ShortName>Player_JumpSping_04.wav</ShortName>
 					<Path>SFX\Player_JumpSping_04_6296B0F9.wem</Path>
+				</File>
+				<File Id="987839474" Language="SFX">
+					<ShortName>AWCK ADD Bullet Impact Metal.wav</ShortName>
+					<Path>SFX\AWCK ADD Bullet Impact Metal_9E78E546.wem</Path>
+				</File>
+				<File Id="1039105264" Language="SFX">
+					<ShortName>Big Rat.wav</ShortName>
+					<Path>SFX\Big Rat_AE8CB46F.wem</Path>
+				</File>
+				<File Id="1067185360" Language="SFX">
+					<ShortName>Little Rat 2.wav</ShortName>
+					<Path>SFX\Little Rat 2_6249213E.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

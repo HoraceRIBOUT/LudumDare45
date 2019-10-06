@@ -4,13 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{9C1C84C1-F789-462F-8EF9-46C16EE5955A}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="LD45_Main" ID="{2E3B4A50-BE46-4644-A723-3D01C12C4912}">
-					<PropertyList>
-						<Property Name="Maximum" Type="int32">
-							<ValueList>
-								<Value>18874368</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ObjectInclusionList>
 						<ObjectRef Name="Default Work Unit" ID="{BA191977-B489-40E1-BE14-030F218D6B56}" WorkUnitID="{BA191977-B489-40E1-BE14-030F218D6B56}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Default Work Unit" ID="{096FD3A5-0D90-4A55-834B-4C9108C42260}" WorkUnitID="{096FD3A5-0D90-4A55-834B-4C9108C42260}" Filter="7" Origin="Manual"/>
